@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 public class MainMenuController : MonoBehaviour{
-
-    [SerializeField] private Settings settings;
+    [SerializeField] private Popup settings;
+    [SerializeField] private Popup credits;
 
     public void StartGame() {
         SceneManager.LoadScene("Game");
@@ -22,6 +21,14 @@ public class MainMenuController : MonoBehaviour{
 
     public void CloseSettings() {
         settings.Hide();
+    }
+
+    public void OpenCredits() {
+        credits.Show();
+    }
+
+    public void CloseCredits() {
+        credits.Hide();
     }
     
 }
