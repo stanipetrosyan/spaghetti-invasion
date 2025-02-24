@@ -14,14 +14,20 @@ public class SettingsMenu : MonoBehaviour{
 
     public void SetVolume(float volume) {
         audioMixer.SetFloat("Volume", volume);
+        
+        PlayerPrefs.SetFloat("Volume", volume);
     }
 
     public void SetQuality(int quality) {
         QualitySettings.SetQualityLevel(quality, true);
+        
+        PlayerPrefs.SetInt("Quality", quality);
     }
 
     public void SetFullscreen(bool fullscreen) {
         Screen.fullScreen = fullscreen;
+        
+        PlayerPrefs.SetInt("Fullscreen", fullscreen ? 1 : 0);
     }
 
     private void Start() {
@@ -36,5 +42,8 @@ public class SettingsMenu : MonoBehaviour{
 
     public void SetResolution(int resolutionIndex) {
         Screen.SetResolution(resolutions[resolutionIndex].width, resolutions[resolutionIndex].height, Screen.fullScreen);
+        
+        
+        PlayerPrefs.SetInt("Resolution", resolutionIndex);
     }
 }
