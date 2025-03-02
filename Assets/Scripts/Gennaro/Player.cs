@@ -1,41 +1,43 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private Transform movePoint;
-    [SerializeField] private float radius;
-
-
-    private Vector2 facingDirection;
-
+    [SerializeField] private float radius = 0.5f;
+    private Vector2 direction = Vector2.zero;
+    
+    [SerializeField] private LayerMask interactableLayer;
+    private Rigidbody2D rb;
 
     void Start()
     {
-        movePoint.parent = null;
+        rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0f;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
+        float moveHorizontal = Input.GetAxisRaw("Horizontal");
+        float moveVertical = Input.GetAxisRaw("Vertical");
 
-        if (!(Vector3.Distance(transform.position, movePoint.position) < moveSpeed/20)) return;
-
-        if (Mathf.Approximately(Mathf.Abs(Input.GetAxisRaw("Horizontal")), 1f))
+        if (moveHorizontal != 0)
         {
-            Debug.Log("Player is moving horizontally");
-            facingDirection = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
-            movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+            direction = new Vector2(moveHorizontal, 0);
         }
-
-        if (Mathf.Approximately(Mathf.Abs(Input.GetAxisRaw("Vertical")), 1f))
+        else if (moveVertical != 0)
         {
-            Debug.Log("Player is moving vertically");
-            facingDirection = new Vector2(0f, Input.GetAxisRaw("Vertical"));
-            movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+            direction = new Vector2(0, moveVertical);
+        }
+        
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed;
+        
+        rb.velocity = movement;
+        if (Physics2D.OverlapCircle(rb.position + direction, radius, interactableLayer)) {
+            Debug.Log("Interactable!");
         }
     }
 }
