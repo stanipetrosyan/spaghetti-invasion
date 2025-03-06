@@ -29,7 +29,7 @@ namespace Managers{
         public void StartDialogue(Dialogue dialogue) {
 
             isDialogueActive = true;
-            animator.Play("show");
+           // animator.Play("show");
             
             dialogueLines.Clear();
 
@@ -66,7 +66,7 @@ namespace Managers{
 
         private void EndDialogue() {
             isDialogueActive = false;
-            animator.Play("hide");
+            //animator.Play("hide");
         }
     }
 }

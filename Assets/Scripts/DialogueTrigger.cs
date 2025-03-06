@@ -28,6 +28,7 @@ public class DialogueTrigger: MonoBehaviour{
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
+        UnityEngine.Debug.Log(collision.name);
         if (collision.CompareTag("Player")) {
             TriggerDialogue();
         }
