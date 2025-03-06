@@ -1,11 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Rendering;
 using UnityEngine;
 
-public class Player : MonoBehaviour
-{
+public class Player : MonoBehaviour {
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float radius = 0.5f;
     private Vector2 direction = Vector2.zero;
@@ -13,14 +8,12 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask interactableLayer;
     private Rigidbody2D rb;
 
-    void Start()
-    {
+    void Start() {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
     }
 
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
         float moveVertical = Input.GetAxisRaw("Vertical");
 
