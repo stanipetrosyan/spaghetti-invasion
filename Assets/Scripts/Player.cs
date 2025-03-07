@@ -8,6 +8,7 @@ public class Player : MonoBehaviour {
     [SerializeField] private LayerMask interactableLayer;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+    private bool transformed = false;
 
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -18,9 +19,13 @@ public class Player : MonoBehaviour {
 
     public void Transform() {
         spriteRenderer.color = Color.blue;
+        transformed = true;
     }
 
     private void FixedUpdate() {
+        transformed = false;
+        spriteRenderer.color = transformed ? Color.blue : Color.white;
+        
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
         float moveVertical = Input.GetAxisRaw("Vertical");
 
@@ -36,6 +41,7 @@ public class Player : MonoBehaviour {
         rb.velocity = movement;
         if (Physics2D.OverlapCircle(rb.position + direction, radius, interactableLayer)) {
             Debug.Log("Interactable!");
+            transformed = true;
         }
     }
 }
