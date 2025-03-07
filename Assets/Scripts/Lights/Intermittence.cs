@@ -3,14 +3,18 @@ using UnityEngine.Rendering.Universal;
 
 namespace Lights {
     public class Intermittence: MonoBehaviour {
-        [SerializeField] private Light2D light;
+        private Light2D light2D;
 
         public float minimum = 0.0f;
         public float maximum =  1.0f;
         public float time;
 
+        private void Start() {
+            light2D = GetComponent<Light2D>();
+        }
+
         private void Update() {
-            light.intensity = Mathf.Lerp(minimum, maximum, time);
+            light2D.intensity = Mathf.Lerp(minimum, maximum, time);
 
             time += 0.1f * Time.deltaTime;
             
