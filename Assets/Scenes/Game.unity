@@ -313,12 +313,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 762e3df27d2f42dfa677b5a4e4815044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
   characterIcon: {fileID: 0}
   characterName: {fileID: 0}
   dialogueArea: {fileID: 0}
   isDialogueActive: 0
   typingSpeed: 0.2
-  animator: {fileID: 0}
 --- !u!1 &587873008
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,12 +605,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 762e3df27d2f42dfa677b5a4e4815044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 1530122163}
   characterIcon: {fileID: 1742955414}
   characterName: {fileID: 1966059564}
   dialogueArea: {fileID: 4205761546091986979}
   isDialogueActive: 0
   typingSpeed: 0.2
-  animator: {fileID: 0}
 --- !u!1 &815439765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,48 +1038,38 @@ MonoBehaviour:
         name: 
         icon: {fileID: 0}
       line: Sono un dialogo
+--- !u!1 &1530122161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6572578708322200997, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+  m_PrefabInstance: {fileID: 4205761546091986978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1530122162 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5418104052331753273, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
   m_PrefabInstance: {fileID: 4205761546091986978}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1530122163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530122161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a981c3f545d046729ab4db7521db2b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterIcon: {fileID: 1742955414}
+  characterName: {fileID: 1966059564}
+  dialogueArea: {fileID: 4205761546091986979}
+  isDialogueActive: 0
+  typingSpeed: 0.2
 --- !u!4 &1626423202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4163145500490340202, guid: 6ecf46322c5bbd168bc4b76f79831024, type: 3}
   m_PrefabInstance: {fileID: 1343859819}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1631942249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8022386010468467106, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
-  m_PrefabInstance: {fileID: 2310583242809484973}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1631942255
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631942249}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1637332852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,12 +1121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 762e3df27d2f42dfa677b5a4e4815044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
   characterIcon: {fileID: 815439767}
   characterName: {fileID: 161553298}
   dialogueArea: {fileID: 915163257}
   isDialogueActive: 0
   typingSpeed: 0.2
-  animator: {fileID: 0}
 --- !u!1 &1707774032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,37 +1487,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &2109496896
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2109496897}
-  m_Layer: 0
-  m_Name: Interactables
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2109496897
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109496896}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 701.29816, y: 410.4664, z: -0.57396626}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2310583242809484973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1576,14 +1535,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7482482148912066165, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
-      propertyPath: radius
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7482482148912066165, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
-      propertyPath: interactableLayer.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 8022386010468467106, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_Name
       value: Gennaro
@@ -1591,10 +1542,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8022386010468467106, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1631942255}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
 --- !u!1001 &4102397557371689542
 PrefabInstance:
@@ -1770,7 +1718,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6572578708322200997, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1530122163}
   m_SourcePrefab: {fileID: 100100000, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
 --- !u!114 &4205761546091986979 stripped
 MonoBehaviour:
@@ -1793,4 +1744,3 @@ SceneRoots:
   - {fileID: 2049408415}
   - {fileID: 717501056}
   - {fileID: 587873010}
-  - {fileID: 2109496897}

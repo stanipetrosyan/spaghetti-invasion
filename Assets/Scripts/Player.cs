@@ -50,8 +50,12 @@ public class Player : MonoBehaviour {
                 case "Light":
                     break;
                 case "Interactable":
-                    hit.collider.gameObject.GetComponent<Interactable>().Interact();
+                    if (Input.GetKeyDown(KeyCode.E)) {
+                        hit.collider.gameObject.GetComponent<Interactable>().Interact();
+                    }
+                    
                     break;
+                    
                 default:
                     break;
             }
