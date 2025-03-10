@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Port;
 using UnityEngine;
 
 [Serializable]
@@ -20,17 +21,10 @@ public class Dialogue{
     public List<DialogueLine> lines = new();
 }
 
-public class DialogueTrigger: MonoBehaviour{
+public class DialogueTrigger: MonoBehaviour, Interactable{
     public Dialogue dialogue;
 
-    private void TriggerDialogue() {
+    public void Interact() {
         Managers.GameManagers.Dialogue.StartDialogue(dialogue);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision) {
-        UnityEngine.Debug.Log(collision.name);
-        if (collision.CompareTag("Player")) {
-            TriggerDialogue();
-        }
     }
 }

@@ -1,8 +1,10 @@
+using System.Collections.Generic;
+using Port;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float radius = 0.5f;
+    [SerializeField] private float radius = 2f;
     private Vector2 direction = Vector2.zero;
 
     [SerializeField] private LayerMask interactableLayer;
@@ -13,7 +15,7 @@ public class Player : MonoBehaviour {
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
-        
+
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -25,7 +27,7 @@ public class Player : MonoBehaviour {
     private void FixedUpdate() {
         transformed = false;
         spriteRenderer.color = transformed ? Color.blue : Color.white;
-        
+
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
         float moveVertical = Input.GetAxisRaw("Vertical");
 
@@ -39,9 +41,20 @@ public class Player : MonoBehaviour {
         Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed;
 
         rb.velocity = movement;
-        if (Physics2D.OverlapCircle(rb.position + direction, radius, interactableLayer)) {
-            Debug.Log("Interactable!");
-            transformed = true;
+        var hit = Physics2D.CircleCast(transform.position, radius, Vector2.up, radius, interactableLayer);
+        
+        if (hit.collider != null) {
+            Debug.Log(hit.collider.gameObject.name);
+            UnityEngine.Debug.DrawLine(transform.position, hit.point, Color.red);
+            switch (LayerMask.LayerToName(hit.collider.gameObject.layer)) {
+                case "Light":
+                    break;
+                case "Interactable":
+                    hit.collider.gameObject.GetComponent<Interactable>().Interact();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

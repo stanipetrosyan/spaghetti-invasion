@@ -12,7 +12,7 @@ namespace Managers{
         public TextMeshProUGUI dialogueArea;
         
         
-        private Queue<DialogueLine> dialogueLines;
+        private Queue<DialogueLine> dialogueLines = new();
 
         public bool isDialogueActive = false;
 
@@ -27,6 +27,7 @@ namespace Managers{
         }
 
         public void StartDialogue(Dialogue dialogue) {
+            if (isDialogueActive) return;
 
             isDialogueActive = true;
            // animator.Play("show");
