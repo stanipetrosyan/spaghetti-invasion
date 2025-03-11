@@ -1,10 +1,11 @@
+using System;
 using System.Collections.Generic;
 using Port;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float radius = 2f;
+    [SerializeField] private float radius = 0.5f;
     private Vector2 direction = Vector2.zero;
 
     [SerializeField] private LayerMask interactableLayer;
@@ -32,19 +33,19 @@ public class Player : MonoBehaviour {
         float moveVertical = Input.GetAxisRaw("Vertical");
 
         if (moveHorizontal != 0) {
-            direction = new Vector2(moveHorizontal, 0);
+            direction = new Vector2(moveHorizontal, 0) * 2;
         }
         else if (moveVertical != 0) {
-            direction = new Vector2(0, moveVertical);
+            direction = new Vector2(0, moveVertical) * 2;
         }
 
         Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed;
 
         rb.velocity = movement;
-        var hit = Physics2D.CircleCast(transform.position, radius, Vector2.up, radius, interactableLayer);
+        var hit = Physics2D.CircleCast(transform.position+ new Vector3(direction.x, direction.y, 0), radius, Vector2.up, radius, interactableLayer);
+        Debug.DrawCircle(rb.position + direction, radius, 1000, Color.green);
         
         if (hit.collider != null) {
-            Debug.Log(hit.collider.gameObject.name);
             UnityEngine.Debug.DrawLine(transform.position, hit.point, Color.red);
             switch (LayerMask.LayerToName(hit.collider.gameObject.layer)) {
                 case "Light":
