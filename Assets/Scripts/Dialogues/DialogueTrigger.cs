@@ -5,13 +5,6 @@ using UnityEngine;
 
 namespace Dialogues {
     [Serializable]
-    public class DialogueCharacter{
-        public string name;
-        public Sprite icon;
-    }
-
-
-    [Serializable]
     public class DialogueLine{
         public DialogueCharacter character;
         [TextArea(3, 10)] public string line;

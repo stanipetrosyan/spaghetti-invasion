@@ -15,9 +15,10 @@ namespace Dialogues {
 
         public bool isDialogueActive = false;
 
-        private const float TypingSpeed = 0.5f;
+        private const float TypingSpeed = 0.05f;
 
         private void Start() {
+            gameObject.SetActive(false);
             nextDialogueButton.onClick.AddListener(DisplayNextDialogueLine);
         }
 
@@ -44,7 +45,7 @@ namespace Dialogues {
             var currentLine = dialogueLines.Dequeue();
 
             characterIcon.sprite = currentLine.character.icon;
-            characterName.text = currentLine.character.name;
+            characterName.text = currentLine.character.displayName;
 
             StopAllCoroutines();
 
@@ -61,6 +62,7 @@ namespace Dialogues {
 
         private void EndDialogue() {
             isDialogueActive = false;
+            gameObject.SetActive(false);
         }
     }
 }
