@@ -25,7 +25,7 @@ public class Player : MonoBehaviour {
         transformed = true;
     }
 
-    private void FixedUpdate() {
+    private void Update() {
         transformed = false;
         spriteRenderer.color = transformed ? Color.blue : Color.white;
 
