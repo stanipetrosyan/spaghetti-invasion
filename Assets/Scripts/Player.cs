@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Dialogues;
 using Port;
 using UnityEngine;
 
@@ -42,9 +43,10 @@ public class Player : MonoBehaviour {
         Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed;
 
         rb.velocity = movement;
-        var hit = Physics2D.CircleCast(transform.position+ new Vector3(direction.x, direction.y, 0), radius, Vector2.up, radius, interactableLayer);
+        var hit = Physics2D.CircleCast(transform.position + new Vector3(direction.x, direction.y, 0), radius,
+            Vector2.up, radius, interactableLayer);
         Debug.DrawCircle(rb.position + direction, radius, 1000, Color.green);
-        
+
         if (hit.collider != null) {
             UnityEngine.Debug.DrawLine(transform.position, hit.point, Color.red);
             switch (LayerMask.LayerToName(hit.collider.gameObject.layer)) {
@@ -54,9 +56,11 @@ public class Player : MonoBehaviour {
                     if (Input.GetKeyDown(KeyCode.E)) {
                         hit.collider.gameObject.GetComponent<Interactable>().Interact();
                     }
-                    
+
                     break;
-                    
+                case "Dialogue":
+                    hit.collider.gameObject.GetComponent<DialogueTrigger>().StartDialogue();
+                    break;
                 default:
                     break;
             }

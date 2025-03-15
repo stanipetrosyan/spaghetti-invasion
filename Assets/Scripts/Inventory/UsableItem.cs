@@ -1,12 +1,12 @@
 using UnityEngine;
 
-namespace DefaultNamespace.Inventory{
+namespace Inventory{
     
     [CreateAssetMenu(fileName = "UsableItem", menuName = "ScriptableObjects/UsableItem")]
     public class UsableItem: ScriptableObject{
         public int uses = 1;
         public string displayName;
-        public string type = "Chiave generica";
+        public Type type;
         
         public void Use() {
             uses--;
@@ -14,6 +14,10 @@ namespace DefaultNamespace.Inventory{
 
         public bool IsBroken() {
             return uses == 0;
+        }
+        
+        public enum Type {
+            KEY, SHARP
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace.Inventory;
+using Inventory;
 using Port;
 using UnityEngine;
 
@@ -23,7 +24,7 @@ namespace Managers{
             inventory.AddRange(item);
         }
 
-        public List<UsableItem> GetAllOfType(string type){
+        public List<UsableItem> GetAllOfType(UsableItem.Type type){
             return inventory.FindAll(item => item.type == type);
         }
 

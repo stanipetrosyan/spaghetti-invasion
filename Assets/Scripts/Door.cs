@@ -1,45 +1,40 @@
-using System;
 using System.Collections.Generic;
 using DefaultNamespace.Inventory;
+using Inventory;
 using Managers;
 using Port;
 using UnityEngine;
 
-namespace DefaultNamespace
-{
-    public class Door : MonoBehaviour, Interactable
-    {
-        bool activated = false;
+public class Door : MonoBehaviour, Interactable {
+    bool activated = false;
+    [SerializeField] private List<UsableItem> usableItems = new List<UsableItem>();
 
-        public void Interact()
-        {
-            InventoryManager inventoryManager = Managers.GameManagers.Inventory;
-            if (!inventoryManager)
-            {
-                Debug.Log("No inventory manager");
-            }
-            List<UsableItem> keys = Managers.GameManagers.Inventory.GetAllOfType("Chiave");
-            if (keys.Count > 0)
-            {
-                Managers.GameManagers.Inventory.Use(keys[0]);
-                
-                activated = !activated;
-                if (activated) Debug.Log("Door is activated");
-                else Debug.Log("Door is de-activated");
-            }
-            else
-            {
-                Debug.Log("No keys found");
-            }
+    public void Interact() {
+        var index = 0;
+        while (activated == false) {
+            activated = UseItem(usableItems[index]);
+            if (activated) Debug.Log("Door is activated");
+            else Debug.Log("Door is de-activated");
+            
+            index++;
         }
+    }
 
-        private void Update()
-        {
-            if (activated)
-            {
-                transform.gameObject.SetActive(false);
-                Debug.DrawCircle(transform.parent.position, .5f, 1000, Color.green);
-            }
+    private bool UseItem(UsableItem item) {
+        List<UsableItem> keys = GameManagers.Inventory.GetAllOfType(item.type);
+        if (keys.Count > 0) {
+            GameManagers.Inventory.Use(keys[0]);
+
+            return true;
+        }
+        Debug.Log("No usable items found");
+        return false;
+    }
+
+    private void Update() {
+        if (activated) {
+            transform.gameObject.SetActive(false);
+            Debug.DrawCircle(transform.parent.position, .5f, 1000, Color.green);
         }
     }
 }
