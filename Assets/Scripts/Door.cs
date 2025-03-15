@@ -1,4 +1,7 @@
 using System;
+using System.Collections.Generic;
+using DefaultNamespace.Inventory;
+using Managers;
 using Port;
 using UnityEngine;
 
@@ -6,12 +9,28 @@ namespace DefaultNamespace
 {
     public class Door : MonoBehaviour, Interactable
     {
-        
         bool activated = false;
+
         public void Interact()
         {
-            activated = !activated;
-            if(activated) Debug.Log("Door is activated"); else Debug.Log("Door is de-activated");
+            InventoryManager inventoryManager = Managers.GameManagers.Inventory;
+            if (!inventoryManager)
+            {
+                Debug.Log("No inventory manager");
+            }
+            List<Key> keys = Managers.GameManagers.Inventory.GetAllOfType<Key>();
+            if (keys.Count > 0)
+            {
+                Managers.GameManagers.Inventory.Remove(keys[0]);
+                
+                activated = !activated;
+                if (activated) Debug.Log("Door is activated");
+                else Debug.Log("Door is de-activated");
+            }
+            else
+            {
+                Debug.Log("No keys found");
+            }
         }
 
         private void Update()
