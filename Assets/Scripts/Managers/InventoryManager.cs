@@ -6,19 +6,15 @@ using Port;
 using UnityEngine;
 
 namespace Managers{
-    public class InventoryManager : MonoBehaviour, IManager{
-        private List<Item> inventory;
+    public class InventoryManager: MonoBehaviour, IManager{
+        [SerializeField] private List<Item> inventory = new();
 
         public ManagerStatus Status { get; set; }
 
         public void Startup() {
             Status = ManagerStatus.Started;
         }
-
-        public void Start() {
-            inventory = new List<Item>();
-        }
-
+        
         public void Add(Item item) {
             inventory.Add(item);
         }
