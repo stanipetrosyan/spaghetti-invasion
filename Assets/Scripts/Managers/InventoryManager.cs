@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DefaultNamespace.Inventory;
 using Port;
 using UnityEngine;
 
@@ -6,7 +7,7 @@ namespace Managers
 {
     public class InventoryManager : MonoBehaviour, IManager
     {
-        private List<Objects> inventory = new();
+        private List<Item> inventory = new();
         
         public ManagerStatus Status { get; set; }
         public void Startup()
@@ -15,22 +16,14 @@ namespace Managers
         }
 
 
-        public void Add(Objects obj)
+        public void Add(Item item)
         {
-            inventory.Add(obj);
+            inventory.Add(item);
         }
 
-        public void Remove(Objects obj)
+        public void Remove(Item item)
         {
-            inventory.Remove(obj);
+            inventory.Remove(item);
         }
-    }
-
-
-
-
-    public enum Objects
-    {
-        KEYS
     }
 }
