@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace DefaultNamespace{
     public class ObjectWithItem : MonoBehaviour, Interactable{
-        [SerializeField] private List<Item> items = new();
+        [SerializeField] private List<UsableItem> items = new();
 
         public void Interact() {
             Managers.GameManagers.Inventory.Add(items);

@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Managers{
     public class InventoryManager: MonoBehaviour, IManager{
-        [SerializeField] private List<Item> inventory = new();
+        [SerializeField] private List<UsableItem> inventory = new();
 
         public ManagerStatus Status { get; set; }
 
@@ -15,19 +15,19 @@ namespace Managers{
             Status = ManagerStatus.Started;
         }
         
-        public void Add(Item item) {
+        public void Add(UsableItem item) {
             inventory.Add(item);
         }
 
-        public void Add(List<Item> item) {
+        public void Add(List<UsableItem> item) {
             inventory.AddRange(item);
         }
 
-        public List<T> GetAllOfType<T>() where T : Item {
-            return inventory.OfType<T>().ToList();
+        public List<UsableItem> GetAllOfType(string type){
+            return inventory.FindAll(item => item.type == type);
         }
 
-        public void Use(Item item) {
+        public void Use(UsableItem item) {
             inventory[inventory.IndexOf(item)].Use();
             if (inventory[inventory.IndexOf(item)].IsBroken()) {
                 inventory.Remove(item);

@@ -18,7 +18,7 @@ namespace DefaultNamespace
             {
                 Debug.Log("No inventory manager");
             }
-            List<Key> keys = Managers.GameManagers.Inventory.GetAllOfType<Key>();
+            List<UsableItem> keys = Managers.GameManagers.Inventory.GetAllOfType("Chiave");
             if (keys.Count > 0)
             {
                 Managers.GameManagers.Inventory.Use(keys[0]);

@@ -5,15 +5,14 @@ namespace DefaultNamespace.Inventory
 {
     [System.Serializable]
     public abstract class Item : MonoBehaviour{
-        [SerializeField] private int uses = 1;
-        [SerializeField] private string displayName;
+        [SerializeField] private UsableItem usableItem;
 
         public void Use() {
-            uses--;
+            usableItem.uses--;
         }
 
         public bool IsBroken() {
-            return uses == 0;
+            return usableItem.uses == 0;
         }
     }
 }
