@@ -2,10 +2,8 @@ using UnityEngine;
 
 namespace DefaultNamespace.Inventory
 {
-    public class Key: MonoBehaviour, Item 
-    {
-        [SerializeField] private int uses { get; }
-        [SerializeField] private string type { get; }
-        
+    [System.Serializable]
+    public class Key: Item{
+        [SerializeField] private string type = "Chiave generica";
     }
 }

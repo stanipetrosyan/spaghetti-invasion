@@ -21,7 +21,7 @@ namespace DefaultNamespace
             List<Key> keys = Managers.GameManagers.Inventory.GetAllOfType<Key>();
             if (keys.Count > 0)
             {
-                Managers.GameManagers.Inventory.Remove(keys[0]);
+                Managers.GameManagers.Inventory.Use(keys[0]);
                 
                 activated = !activated;
                 if (activated) Debug.Log("Door is activated");

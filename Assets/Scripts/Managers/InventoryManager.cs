@@ -27,8 +27,11 @@ namespace Managers{
             return inventory.OfType<T>().ToList();
         }
 
-        public void Remove(Item item) {
-            inventory.Remove(item);
+        public void Use(Item item) {
+            inventory[inventory.IndexOf(item)].Use();
+            if (inventory[inventory.IndexOf(item)].IsBroken()) {
+                inventory.Remove(item);
+            }
         }
     }
 }
