@@ -8,16 +8,20 @@ namespace Managers{
         public static DialogueManager Dialogue { get; private set; }
         public static AudioManager Audio { get; private set; }
         
+        public static InventoryManager Inventory { get; private set; }
+        
         private List<IManager> startSequence;
 
 
         void Awake() {
             Dialogue = GetComponent<DialogueManager>();
             Audio = GetComponent<AudioManager>();
+            Inventory = GetComponent<InventoryManager>();
             
             startSequence = new List<IManager>() {
                 Dialogue,
-                Audio
+                Audio,
+                Inventory
             };
 
             Debug.Log(PlayerPrefs.GetFloat("Volume", 0));
