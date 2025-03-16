@@ -9,6 +9,7 @@ namespace Managers{
         public static AudioManager Audio { get; private set; }
         
         public static InventoryManager Inventory { get; private set; }
+        public static InputManager Input { get; private set; }
         
         private List<IManager> startSequence;
 
@@ -17,11 +18,13 @@ namespace Managers{
             Dialogue = GetComponent<DialogueManager>();
             Audio = GetComponent<AudioManager>();
             Inventory = GetComponent<InventoryManager>();
+            Input = GetComponent<InputManager>();
             
             startSequence = new List<IManager>() {
+                Input,
                 Dialogue,
                 Audio,
-                Inventory
+                Inventory,
             };
 
             Debug.Log(PlayerPrefs.GetFloat("Volume", 0));

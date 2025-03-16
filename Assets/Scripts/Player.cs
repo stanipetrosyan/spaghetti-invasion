@@ -1,6 +1,5 @@
-using System;
-using System.Collections.Generic;
 using Dialogues;
+using Managers;
 using Port;
 using UnityEngine;
 
@@ -27,27 +26,18 @@ public class Player : MonoBehaviour {
     }
 
     private void Update() {
-        transformed = false;
-        spriteRenderer.color = transformed ? Color.blue : Color.white;
-
-        float moveHorizontal = Input.GetAxisRaw("Horizontal");
-        float moveVertical = Input.GetAxisRaw("Vertical");
-
-        if (moveHorizontal != 0) {
-            direction = new Vector2(moveHorizontal, 0) * 2;
+        if (GameManagers.Input.CanMove()) {
+            Move();
+            DetectCollision();
         }
-        else if (moveVertical != 0) {
-            direction = new Vector2(0, moveVertical) * 2;
-        }
+    }
 
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed;
-
-        rb.velocity = movement;
+    private void DetectCollision() {
         var hit = Physics2D.CircleCast(transform.position + new Vector3(direction.x, direction.y, 0), radius,
             Vector2.up, radius, interactableLayer);
         Debug.DrawCircle(rb.position + direction, radius, 1000, Color.green);
 
-        if (hit.collider != null) {
+        if (hit.collider is not null) {
             UnityEngine.Debug.DrawLine(transform.position, hit.point, Color.red);
             switch (LayerMask.LayerToName(hit.collider.gameObject.layer)) {
                 case "Light":
@@ -65,5 +55,24 @@ public class Player : MonoBehaviour {
                     break;
             }
         }
+    }
+
+    private void Move() {
+        transformed = false;
+        spriteRenderer.color = transformed ? Color.blue : Color.white;
+
+        float moveHorizontal = Input.GetAxisRaw("Horizontal");
+        float moveVertical = Input.GetAxisRaw("Vertical");
+
+        if (moveHorizontal != 0) {
+            direction = new Vector2(moveHorizontal, 0) * 2;
+        }
+        else if (moveVertical != 0) {
+            direction = new Vector2(0, moveVertical) * 2;
+        }
+
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed;
+
+        rb.velocity = movement;
     }
 }
