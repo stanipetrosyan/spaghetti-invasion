@@ -11,6 +11,7 @@ namespace Dialogues {
             if (interacted) return;
             
             GameManagers.Dialogue.StartDialogue(dialogue);
+            GameManagers.Input.SetCanMove(false);
             interacted = true;
         }
     }

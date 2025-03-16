@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Managers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -63,6 +64,8 @@ namespace Dialogues {
         private void EndDialogue() {
             IsDialogueActive = false;
             gameObject.SetActive(false);
+            
+            GameManagers.Input.SetCanMove(true);
         }
     }
 }
