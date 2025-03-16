@@ -2538,6 +2538,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6691333669591980799, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
+      propertyPath: orthographic size
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691333669591980799, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -2725,13 +2729,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2049408415}
     m_Modifications:
+    - target: {fileID: 159049759618713817, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787943846031875999, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787943846031875999, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787943846031875999, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -261
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787943846031875999, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -96
+      objectReference: {fileID: 0}
     - target: {fileID: 5418104052331753273, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5418104052331753273, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 5418104052331753273, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2768,6 +2792,18 @@ PrefabInstance:
     - target: {fileID: 6572578708322200997, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
       propertyPath: m_Name
       value: DialogueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124228821291253087, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+      propertyPath: m_margin.z
+      value: -882.1687
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423426838729482034, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 217
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423426838729482034, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 87
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
