@@ -16,5 +16,10 @@ namespace Managers{
             dialogueBox.gameObject.SetActive(true);
             dialogueBox.StartDialogue(dialogue);
         }
+
+
+        public bool IsActiveDialogue() {
+            return dialogueBox.IsDialogueActive;
+        }
     }
 }

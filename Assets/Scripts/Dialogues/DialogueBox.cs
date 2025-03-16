@@ -13,7 +13,7 @@ namespace Dialogues {
 
         private readonly Queue<DialogueLine> dialogueLines = new();
 
-        public bool isDialogueActive = false;
+        public bool IsDialogueActive { get; private set; }
 
         private const float TypingSpeed = 0.05f;
 
@@ -23,9 +23,9 @@ namespace Dialogues {
         }
 
         public void StartDialogue(Dialogue dialogue) {
-            if (isDialogueActive) return;
+            if (IsDialogueActive) return;
 
-            isDialogueActive = true;
+            IsDialogueActive = true;
 
             dialogueLines.Clear();
 
@@ -61,7 +61,7 @@ namespace Dialogues {
         }
 
         private void EndDialogue() {
-            isDialogueActive = false;
+            IsDialogueActive = false;
             gameObject.SetActive(false);
         }
     }

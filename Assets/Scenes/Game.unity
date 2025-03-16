@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 560998039}
   - component: {fileID: 560998038}
   - component: {fileID: 560998037}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: BreakWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,6 +365,10 @@ MonoBehaviour:
   dialogue:
     lines:
     - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: The wall is cracked in many places. You can see the crack going all the
+        way through the wall, to another room. Peering through the crack, you see
+        a spry eye looking back at you.
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
       line: "Aaah yes, here\u2026 I didn\u2019t expect another one so soon. But I
         was sure I heard someone. You must be provisions\u2026 They like to be cautious,
         and have fresh replacements. Oh, apologize for my rudeness. Not much time
@@ -373,6 +377,22 @@ MonoBehaviour:
     - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
       line: "What? No, I am not like you. I am human. Not a particularly smart one,
         that\u2019s all."
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: "It\u2019s a long story I won\u2019t bother you with. Suffice it to say,
+        when I found out about the existence of your kind, I \u2026 changed. In ways
+        I did not expect. I found your culture\u2026 Infectious. Yes. At first I
+        was just curious. But the more information I gathered, the more I convinced
+        myself of your existence\u2026 The more I became obsessed with you. My fellows
+        did not like it. Even worse, when I tried to pry into this facility, <Mr.
+        Stivale> did not like it\u2026"
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: "Ehi, amico. You were kind enough to listen till here. Allow me a word
+        of advice in return\u2026 RUN. AWAY. Do not wait for your captors. If they
+        found you\u2026 You are finished. FI-NI-TO, understood?"
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: "But how to pry open the door of the cell? Your predecessor\u2026 I have
+        heard him scraping for some time. Maybe he left something useful\u2026 Look
+        in the cracks on the floor\u2026"
 --- !u!61 &560998038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2032,7 +2052,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1704125087}
-  - component: {fileID: 1704125088}
   - component: {fileID: 1704125089}
   m_Layer: 0
   m_Name: Cell
@@ -2060,19 +2079,6 @@ Transform:
   - {fileID: 1221772195}
   m_Father: {fileID: 2049408415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1704125088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704125086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a27ff767c9e441da7472d4ea854a0f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterController: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
 --- !u!114 &1704125089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2082,11 +2088,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1704125086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fb60a2843ea499e962832b2ddf1884f, type: 3}
+  m_Script: {fileID: 11500000, guid: 437548e7042345e0b0a0982b98a7dbf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    lines: []
+  dialogueList:
+  - lines:
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: Ehi, you!... Can you hear me?
+  - lines:
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: I know you can! To the wall! The broken tile!
+  - lines:
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: "I was certain I heard someone\u2026"
+  timeBetweenDialogues: 10
 --- !u!1 &1948090334 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6651381476734230927, guid: 6ecf46322c5bbd168bc4b76f79831024, type: 3}
