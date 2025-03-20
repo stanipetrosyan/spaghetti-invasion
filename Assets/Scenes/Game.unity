@@ -767,6 +767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069d1ae70eef48648b7f81d56b3fbf26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settings: {fileID: 0}
 --- !u!1 &863896298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2494,6 +2495,22 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5154116037002793003, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154116037002793003, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154116037002793003, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154116037002793003, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -2524,15 +2541,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2742,26 +2759,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2049408415}
     m_Modifications:
-    - target: {fileID: 159049759618713817, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787943846031875999, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787943846031875999, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787943846031875999, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -261
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787943846031875999, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -96
-      objectReference: {fileID: 0}
     - target: {fileID: 5418104052331753273, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2805,18 +2802,6 @@ PrefabInstance:
     - target: {fileID: 6572578708322200997, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
       propertyPath: m_Name
       value: DialogueBox
-      objectReference: {fileID: 0}
-    - target: {fileID: 7124228821291253087, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
-      propertyPath: m_margin.z
-      value: -882.1687
-      objectReference: {fileID: 0}
-    - target: {fileID: 8423426838729482034, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 217
-      objectReference: {fileID: 0}
-    - target: {fileID: 8423426838729482034, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 87
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
