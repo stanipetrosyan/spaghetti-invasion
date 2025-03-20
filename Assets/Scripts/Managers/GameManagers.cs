@@ -10,6 +10,7 @@ namespace Managers{
         
         public static InventoryManager Inventory { get; private set; }
         public static InputManager Input { get; private set; }
+        public static InteractManager Interact { get; private set; }
         
         private List<IManager> startSequence;
 
@@ -19,12 +20,14 @@ namespace Managers{
             Audio = GetComponent<AudioManager>();
             Inventory = GetComponent<InventoryManager>();
             Input = GetComponent<InputManager>();
+            Interact = GetComponent<InteractManager>();
             
             startSequence = new List<IManager>() {
                 Input,
                 Dialogue,
                 Audio,
                 Inventory,
+                Interact
             };
 
             Debug.Log(PlayerPrefs.GetFloat("Volume", 0));

@@ -43,6 +43,7 @@ public class Player : MonoBehaviour {
                 case "Light":
                     break;
                 case "Interactable":
+                    GameManagers.Interact.Activate();
                     if (Input.GetKeyDown(KeyCode.E)) {
                         hit.collider.gameObject.GetComponent<Interactable>().Interact();
                     }
@@ -54,6 +55,9 @@ public class Player : MonoBehaviour {
                 default:
                     break;
             }
+        }
+        else {
+            GameManagers.Interact.Deactivate();
         }
     }
 
