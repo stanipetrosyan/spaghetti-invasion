@@ -15,5 +15,6 @@ public class Board : MonoBehaviour, Interactable{
         board.gameObject.SetActive(true);
         closeText.gameObject.SetActive(true);
         GameManagers.Input.SetCanMove(false);
+        GameManagers.Interact.Deactivate();
     }
 }
