@@ -1,17 +1,15 @@
 using Managers;
-using TMPro;
+using Port;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace InteractableObjects {
-    public class Board : MonoBehaviour, Port.Interactable{
-    
-        [SerializeField] private Image board;
-        [SerializeField] private TextMeshProUGUI closeText;
+    public class Board : MonoBehaviour, Interactable {
+        [SerializeField] private Popup boardZoomed;
+
 
         public void Interact() {
-            board.gameObject.SetActive(true);
-            closeText.gameObject.SetActive(true);
+            boardZoomed.Show();
+
             GameManagers.Input.SetCanMove(false);
             GameManagers.Interact.Deactivate();
         }
