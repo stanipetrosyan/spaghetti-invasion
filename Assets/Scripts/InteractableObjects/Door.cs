@@ -3,7 +3,7 @@ using Inventory;
 using Managers;
 using UnityEngine;
 
-namespace Interactable {
+namespace InteractableObjects {
     public class Door : MonoBehaviour, Port.Interactable {
         bool activated = false;
         [SerializeField] private List<UsableItem> usableItems = new List<UsableItem>();

@@ -1,7 +1,7 @@
 using Dialogues;
 using UnityEngine;
 
-namespace Interactable {
+namespace InteractableObjects {
     [RequireComponent(typeof(DialogueTrigger))]
     public class ObjectWithoutItem : MonoBehaviour, Port.Interactable{
         private DialogueTrigger dialogueTrigger;

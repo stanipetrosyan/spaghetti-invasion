@@ -273,6 +273,117 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152259126}
   m_CullTransparentMesh: 1
+--- !u!1 &466061542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 466061543}
+  - component: {fileID: 466061546}
+  - component: {fileID: 466061545}
+  - component: {fileID: 466061544}
+  m_Layer: 3
+  m_Name: BreakTileWithSharp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &466061543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466061542}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27, y: 11.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1052586536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &466061544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466061542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb60a2843ea499e962832b2ddf1884f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    lines:
+    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
+      line: "There is something shiny peering through a broken tile on the floor\u2026"
+    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
+      line: You obtain sharpened tool!
+--- !u!114 &466061545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466061542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91197879f5f7480182157b863364d62c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11400000, guid: 7ffda0ee0f4d46c5ba957901365fb776, type: 2}
+--- !u!61 &466061546
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466061542}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10}
+  m_EdgeRadius: 0
 --- !u!1 &477967988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4406357906514611513, guid: 6ecf46322c5bbd168bc4b76f79831024, type: 3}
@@ -880,7 +991,6 @@ GameObject:
   - component: {fileID: 717501058}
   - component: {fileID: 717501059}
   - component: {fileID: 717501060}
-  - component: {fileID: 717501061}
   - component: {fileID: 717501062}
   m_Layer: 0
   m_Name: GameManagers
@@ -968,18 +1078,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 0}
---- !u!114 &717501061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717501054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f08f8b90890d7f409cb3737d0a2cf6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &717501062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,6 +1418,65 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4163145500490340202, guid: 4fd95feaf59a1bb379ea3332ea34a031, type: 3}
   m_PrefabInstance: {fileID: 1348746082}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1052586534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1052586536}
+  - component: {fileID: 1052586535}
+  m_Layer: 0
+  m_Name: Cell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1052586535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052586534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437548e7042345e0b0a0982b98a7dbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueList:
+  - lines:
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: Ehi, you!... Can you hear me?
+  - lines:
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: I know you can! To the wall! The broken tile!
+  - lines:
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: "I was certain I heard someone\u2026"
+  timeBetweenDialogues: 10
+--- !u!4 &1052586536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052586534}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 243.11743, y: -47.01764, z: 0.22761714}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1279043003}
+  - {fileID: 466061543}
+  - {fileID: 1293798634}
+  - {fileID: 1645100088}
+  m_Father: {fileID: 2049408415}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1171665662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,6 +1764,127 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1279043002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1279043003}
+  - component: {fileID: 1279043005}
+  - component: {fileID: 1279043004}
+  m_Layer: 8
+  m_Name: BreakWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1279043003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279043002}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 27.7, y: 22.2, z: 0.39743912}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1052586536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1279043004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279043002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb60a2843ea499e962832b2ddf1884f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    lines:
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: The wall is cracked in many places. You can see the crack going all the
+        way through the wall, to another room. Peering through the crack, you see
+        a spry eye looking back at you.
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: "Aaah yes, here\u2026 I didn\u2019t expect another one so soon. But I
+        was sure I heard someone. You must be provisions\u2026 They like to be cautious,
+        and have fresh replacements. Oh, apologize for my rudeness. Not much time
+        to practice kindness in this cell\u2026 Nor good manners. My name is Frate
+        Farina - or just Farina, nowadays."
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: "What? No, I am not like you. I am human. Not a particularly smart one,
+        that\u2019s all."
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: "It\u2019s a long story I won\u2019t bother you with. Suffice it to say,
+        when I found out about the existence of your kind, I \u2026 changed. In ways
+        I did not expect. I found your culture\u2026 Infectious. Yes. At first I
+        was just curious. But the more information I gathered, the more I convinced
+        myself of your existence\u2026 The more I became obsessed with you. My fellows
+        did not like it. Even worse, when I tried to pry into this facility, <Mr.
+        Stivale> did not like it\u2026"
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: "Ehi, amico. You were kind enough to listen till here. Allow me a word
+        of advice in return\u2026 RUN. AWAY. Do not wait for your captors. If they
+        found you\u2026 You are finished. FI-NI-TO, understood?"
+    - character: {fileID: 11400000, guid: 8007c0b055adefcc883073634c85b428, type: 2}
+      line: "But how to pry open the door of the cell? Your predecessor\u2026 I have
+        heard him scraping for some time. Maybe he left something useful\u2026 Look
+        in the cracks on the floor\u2026"
+--- !u!61 &1279043005
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279043002}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1640625, y: -3.77388}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 16.751831, y: 8.54776}
+  m_EdgeRadius: 0
 --- !u!1 &1281298007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1778,6 +2056,113 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.96, y: 0.96}
+  m_EdgeRadius: 0
+--- !u!1 &1293798633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1293798634}
+  - component: {fileID: 1293798637}
+  - component: {fileID: 1293798636}
+  - component: {fileID: 1293798635}
+  m_Layer: 3
+  m_Name: BreakTile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1293798634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293798633}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -36.8, y: 2.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1052586536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1293798635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293798633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f095eaf46b034005bc0b862eddbc7cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1293798636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293798633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb60a2843ea499e962832b2ddf1884f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    lines:
+    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
+      line: There is nothing here...
+--- !u!61 &1293798637
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293798633}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10}
   m_EdgeRadius: 0
 --- !u!1001 &1343859819
 PrefabInstance:
@@ -2140,6 +2525,113 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PolygonShapes: []
   m_OutlineShapes: []
+--- !u!1 &1645100087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645100088}
+  - component: {fileID: 1645100091}
+  - component: {fileID: 1645100090}
+  - component: {fileID: 1645100089}
+  m_Layer: 3
+  m_Name: BreakTile (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1645100088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645100087}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21, y: -26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1052586536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645100089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645100087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f095eaf46b034005bc0b862eddbc7cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1645100090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645100087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb60a2843ea499e962832b2ddf1884f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    lines:
+    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
+      line: There is nothing here...
+--- !u!61 &1645100091
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645100087}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10}
+  m_EdgeRadius: 0
 --- !u!1 &1669418742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2794,6 +3286,7 @@ RectTransform:
   - {fileID: 997068003}
   - {fileID: 7049478491264913656}
   - {fileID: 574001743}
+  - {fileID: 1052586536}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2848,33 +3341,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2049408415}
     m_Modifications:
-    - target: {fileID: 1268896198082519001, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1268896198082519001, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
-      propertyPath: m_ShadowIntensity
-      value: 0.516
-      objectReference: {fileID: 0}
-    - target: {fileID: 1268896198082519001, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
-      propertyPath: m_PointLightInnerRadius
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1268896198082519001, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
-      propertyPath: m_ShadowIntensityEnabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1604479492033775843, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
-      propertyPath: minimum
-      value: 24
-      objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.5
+      value: 239.8
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 37.5
+      value: -56.3
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.z

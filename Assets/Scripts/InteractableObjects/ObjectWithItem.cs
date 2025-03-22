@@ -4,7 +4,7 @@ using Inventory;
 using Managers;
 using UnityEngine;
 
-namespace Interactable {
+namespace InteractableObjects {
     [RequireComponent(typeof(DialogueTrigger))]
     public class ObjectWithItem : MonoBehaviour, Port.Interactable{
         private DialogueTrigger dialogueTrigger;

@@ -13,6 +13,7 @@ namespace Managers{
         }
 
         public void StartDialogue(Dialogue dialogue) {
+            Debug.Log("Starting dialogue");
             dialogueBox.gameObject.SetActive(true);
             dialogueBox.StartDialogue(dialogue);
         }

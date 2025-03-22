@@ -45,11 +45,11 @@ public class Player : MonoBehaviour {
                 case "Light":
                     break;
                 case "Interactable":
-                    GameManagers.Interact.Activate();
+                    //GameManagers.Interact.Activate();
                     
                     // TODO: use sendMessage instead of get component ? 
                     if (Input.GetKeyDown(KeyCode.E)) {
-                        hit.collider.gameObject.GetComponent<Interactable>().Interact();
+                        hit.collider.gameObject.GetComponent<Port.Interactable>().Interact();
                     }
 
                     break;
