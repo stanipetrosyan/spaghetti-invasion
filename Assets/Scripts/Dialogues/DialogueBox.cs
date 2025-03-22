@@ -67,5 +67,10 @@ namespace Dialogues {
             
             GameManagers.Input.SetCanMove(true);
         }
+
+        public void Show() {
+            gameObject.SetActive(true);
+        }
+        
     }
 }
