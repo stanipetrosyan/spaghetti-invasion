@@ -12,17 +12,19 @@ public class Player : MonoBehaviour {
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private bool transformed = false;
+    private AnxietyCounter anxietyCounter;
 
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
-
+        anxietyCounter = GetComponent<AnxietyCounter>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void Transform() {
         spriteRenderer.color = Color.blue;
         transformed = true;
+        anxietyCounter.anxiety += (Time.deltaTime * 0.5f);
     }
 
     private void Update() {
@@ -44,6 +46,8 @@ public class Player : MonoBehaviour {
                     break;
                 case "Interactable":
                     GameManagers.Interact.Activate();
+                    
+                    // TODO: use sendMessage instead of get component ? 
                     if (Input.GetKeyDown(KeyCode.E)) {
                         hit.collider.gameObject.GetComponent<Interactable>().Interact();
                     }
@@ -57,7 +61,7 @@ public class Player : MonoBehaviour {
             }
         }
         else {
-            GameManagers.Interact.Deactivate();
+            //GameManagers.Interact.Deactivate();
         }
     }
 

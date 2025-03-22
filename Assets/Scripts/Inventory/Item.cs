@@ -1,8 +1,6 @@
-using Inventory;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-namespace DefaultNamespace.Inventory
+namespace Inventory
 {
     [System.Serializable]
     public abstract class Item : MonoBehaviour{

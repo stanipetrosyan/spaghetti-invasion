@@ -795,7 +795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &619394801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,6 +881,7 @@ GameObject:
   - component: {fileID: 717501059}
   - component: {fileID: 717501060}
   - component: {fileID: 717501061}
+  - component: {fileID: 717501062}
   m_Layer: 0
   m_Name: GameManagers
   m_TagString: Untagged
@@ -977,6 +978,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f08f8b90890d7f409cb3737d0a2cf6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &717501062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717501054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97726f242f04d318d3884bcb042b08c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 152259129}
@@ -2844,6 +2857,10 @@ PrefabInstance:
       value: 0.516
       objectReference: {fileID: 0}
     - target: {fileID: 1268896198082519001, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268896198082519001, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_ShadowIntensityEnabled
       value: 1
       objectReference: {fileID: 0}
@@ -2853,11 +2870,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 137.2
+      value: 42.5
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -102.1
+      value: 37.5
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.z

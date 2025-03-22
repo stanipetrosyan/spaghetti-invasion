@@ -8,7 +8,7 @@ public class AnxietyCounter : MonoBehaviour {
 
     [SerializeField] private Light2D light;
     [SerializeField] private Camera camera;
-    private float minimum = 24f;
+    private float minimum = 26f;
     private float maximum;
 
     private void Start() {
@@ -16,6 +16,8 @@ public class AnxietyCounter : MonoBehaviour {
     }
 
     private void Update() {
+        if (anxiety <= 0) return;
+        
         HeartBeat();
         RedScreen();
     }

@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using DefaultNamespace.Inventory;
 using Dialogues;
 using Managers;
 using Port;
