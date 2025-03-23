@@ -49,12 +49,15 @@ public class Player : MonoBehaviour {
                     
                     // TODO: use sendMessage instead of get component ? 
                     if (Input.GetKeyDown(KeyCode.E)) {
-                        hit.collider.gameObject.GetComponent<Port.Interactable>().Interact();
+                        hit.collider.gameObject.GetComponent<Interactable>().Interact();
                     }
 
                     break;
                 case "Dialogue":
-                    hit.collider.gameObject.GetComponent<DialogueTrigger>().StartDialogue();
+                    GameManagers.Interact.Activate();
+                    if (Input.GetKeyDown(KeyCode.E)) {
+                        hit.collider.gameObject.GetComponent<DialogueTrigger>().StartDialogue();
+                    }
                     break;
                 default:
                     break;

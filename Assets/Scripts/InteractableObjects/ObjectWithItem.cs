@@ -17,7 +17,6 @@ namespace InteractableObjects {
 
         public void Interact() {
             if (interacted) return;
-            Debug.Log("Interacted");
             GameManagers.Inventory.Add(items);
 
             if (dialogueTrigger) {

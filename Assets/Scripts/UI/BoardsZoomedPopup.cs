@@ -5,16 +5,15 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace UI {
-    [RequireComponent(typeof(Popup))]
     public class BoardsZoomedPopup : MonoBehaviour{
         [SerializeField] private Image board;
         [SerializeField] private TextMeshProUGUI closeText;
-        
-        void Start() {
-            
+
+        private void Start() {
+            gameObject.SetActive(false);
         }
 
-        void Update() {
+        private void Update() {
             if (Input.GetKeyDown(KeyCode.X)) {
                 gameObject.SetActive(false);
                 GameManagers.Input.SetCanMove(true);

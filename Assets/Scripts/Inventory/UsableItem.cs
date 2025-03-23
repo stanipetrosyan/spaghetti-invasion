@@ -8,9 +8,7 @@ namespace Inventory{
         public string displayName;
         public Type type;
         
-        public void Use() {
-            uses--;
-        }
+        public void Use() {}
 
         public bool IsBroken() {
             return uses == 0;

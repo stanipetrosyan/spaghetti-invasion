@@ -9,8 +9,6 @@ namespace Dialogues {
         public void StartDialogue() {
             if (interacted) return;
             
-            Debug.Log("Starting dialogue");
-            
             GameManagers.Dialogue.StartDialogue(dialogue);
             GameManagers.Input.SetCanMove(false);
             interacted = true;
