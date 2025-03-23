@@ -21,7 +21,7 @@ namespace InteractableObjects {
             }
 
             if (activated) {
-                this.gameObject.SetActive(false);
+                gameObject.SetActive(false);
                 GameManagers.Dialogue.StartDialogue(success);
             }
             else {

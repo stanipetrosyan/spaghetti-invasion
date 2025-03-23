@@ -3,16 +3,17 @@ using UnityEngine;
 namespace UI {
     public class Popup: MonoBehaviour {
 
+        [SerializeField] private GameObject panel;
         private void Start() {
             Hide();
         }
 
         public void Show() {
-            transform.gameObject.SetActive(true);
+            panel.SetActive(true);
         }
 
         public void Hide() {
-            transform.gameObject.SetActive(false);
+            panel.SetActive(false);
         }
     }
 }
