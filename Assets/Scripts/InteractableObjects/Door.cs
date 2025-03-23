@@ -1,40 +1,42 @@
 using System.Collections.Generic;
+using Dialogues;
 using Inventory;
 using Managers;
 using UnityEngine;
 
 namespace InteractableObjects {
     public class Door : MonoBehaviour, Port.Interactable {
-        bool activated = false;
+        [SerializeField] private Dialogue success;
+        [SerializeField] private Dialogue failure;
         [SerializeField] private List<UsableItem> usableItems = new List<UsableItem>();
+        private bool activated = false;
 
         public void Interact() {
             var index = 0;
-            while (activated == false) {
+
+            while (activated == false && index < usableItems.Count) {
                 activated = UseItem(usableItems[index]);
-                if (activated) Debug.Log("Door is activated");
-                else Debug.Log("Door is de-activated");
-            
+
                 index++;
+            }
+
+            if (activated) {
+                this.gameObject.SetActive(false);
+                GameManagers.Dialogue.StartDialogue(success);
+            }
+            else {
+                GameManagers.Dialogue.StartDialogue(failure);
             }
         }
 
         private bool UseItem(UsableItem item) {
             List<UsableItem> keys = GameManagers.Inventory.GetAllOfType(item.type);
-            if (keys.Count > 0) {
-                GameManagers.Inventory.Use(keys[0]);
 
-                return true;
-            }
-            Debug.Log("No usable items found");
-            return false;
-        }
+            if (keys.Count <= 0) return false;
 
-        private void Update() {
-            if (activated) {
-                transform.gameObject.SetActive(false);
-                Debug.DrawCircle(transform.parent.position, .5f, 1000, Color.green);
-            }
+            GameManagers.Inventory.Use(keys[0]);
+
+            return true;
         }
     }
 }
