@@ -14,7 +14,9 @@ namespace Managers {
 
         private void Update() {
             if (Input.GetKeyDown(KeyCode.Escape)) {
-                // open game menu
+                settings.Show();
+                
+                canMove = false;
             }
         }
 
@@ -23,7 +25,7 @@ namespace Managers {
         }
 
         public void SetCanMove(bool move) {
-            this.canMove = move;
+            canMove = move;
         }
     }
 }
