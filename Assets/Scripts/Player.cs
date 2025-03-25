@@ -22,12 +22,12 @@ public class Player : MonoBehaviour {
     }
 
     public void Transform() {
-        spriteRenderer.color = Color.blue;
         transformed = true;
-        anxietyCounter.anxiety += (Time.deltaTime * 0.5f);
     }
 
     private void Update() {
+        ManageAnxiety();
+
         if (GameManagers.Input.CanMove()) {
             Move();
             DetectCollision();
@@ -46,7 +46,7 @@ public class Player : MonoBehaviour {
                     break;
                 case "Interactable":
                     GameManagers.Interact.Activate();
-                    
+
                     // TODO: use sendMessage instead of get component ? 
                     if (Input.GetKeyDown(KeyCode.E)) {
                         hit.collider.gameObject.GetComponent<Interactable>().Interact();
@@ -58,6 +58,7 @@ public class Player : MonoBehaviour {
                     if (Input.GetKeyDown(KeyCode.E)) {
                         hit.collider.gameObject.GetComponent<DialogueTrigger>().StartDialogue();
                     }
+
                     break;
                 default:
                     break;
@@ -68,9 +69,13 @@ public class Player : MonoBehaviour {
         }
     }
 
+    private void ManageAnxiety() {
+        if (transformed) anxietyCounter.IncreaseAnxiety(0.5f);
+        else anxietyCounter.DecreaseAnxiety(0.5f);
+    }
+
     private void Move() {
         transformed = false;
-        spriteRenderer.color = transformed ? Color.blue : Color.white;
 
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
         float moveVertical = Input.GetAxisRaw("Vertical");

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Managers {
     public class InteractManager : MonoBehaviour, IManager{
-        [SerializeField] private TextMeshProUGUI text;
+        [SerializeField] private GameObject text;
 
         public void Activate() {
             text.gameObject.SetActive(true);

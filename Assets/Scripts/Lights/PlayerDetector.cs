@@ -10,16 +10,14 @@ namespace Lights {
             light2D = GetComponent<Light2D>();
         }
         private void Update() {
-        
-            Debug.DrawCircle(transform.position, light2D.pointLightOuterRadius, 32, Color.green);
-            var vectorDown =  transform.position - new Vector3(0, light2D.pointLightOuterRadius, 0);
-            UnityEngine.Debug.DrawLine(transform.position, vectorDown, Color.blue);
-
-            List<RaycastHit2D> hits = new List<RaycastHit2D>();
-            Physics2D.CircleCast(transform.position, light2D.pointLightOuterRadius, Vector2.up, new ContactFilter2D().NoFilter(), hits);
+            var lightRadius = light2D.pointLightOuterRadius;
+            Debug.DrawCircle(transform.position, lightRadius, 32, Color.green);
+            
+            var hits = new List<RaycastHit2D>();
+            Physics2D.CircleCast(transform.position, lightRadius, Vector2.zero, new ContactFilter2D().NoFilter(), hits, lightRadius);
 
             foreach (var hit in hits) {
-                if (hit.collider != null) {
+                if (hit.collider is not null) {
                     var player = hit.collider.gameObject.GetComponent<Player>();
                     if (player) {
                         player.Transform();
