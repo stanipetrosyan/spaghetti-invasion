@@ -17,6 +17,7 @@ namespace UI {
 
         public void OpenSettings() {
             settings.Show();
+            credits.Hide();
         }
 
         public void CloseSettings() {
@@ -25,6 +26,7 @@ namespace UI {
 
         public void OpenCredits() {
             credits.Show();
+            settings.Hide();
         }
 
         public void CloseCredits() {

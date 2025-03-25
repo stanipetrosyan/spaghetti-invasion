@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -23,9 +24,13 @@ namespace UI {
             volumeSlider.value = PlayerPrefs.GetFloat("Volume", 1);
             fullscreenToggle.isOn = PlayerPrefs.GetInt("Fullscreen", 0) == 1;
             qualityDropdown.value = PlayerPrefs.GetInt("Quality", 0);
-        
-            int resolution = PlayerPrefs.GetInt("Resolution", 0);
-            Screen.SetResolution(resolutions[resolution].width, resolutions[resolution].height, Screen.fullScreen);
+            
+            var defaultResolution = resolutions.First(res => res is { width: 1920, height: 1080 });
+            var resolutionIndex = Array.IndexOf(resolutions, defaultResolution);
+
+            Screen.SetResolution(defaultResolution.width, defaultResolution.height, Screen.fullScreen); 
+            resolutionDropdown.value = resolutionIndex;
+            SetResolution(resolutionIndex);
         }
         public void SetVolume(float volume) {
             audioMixer.SetFloat("Volume", volume);
