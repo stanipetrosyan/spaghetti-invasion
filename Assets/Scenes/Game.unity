@@ -3133,10 +3133,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueBox
       objectReference: {fileID: 0}
-    - target: {fileID: 6572578708322200997, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3278,7 +3274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2954798876398279126, guid: 094a102e6f78474e3a34d6796e196610, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -378
+      value: -463
       objectReference: {fileID: 0}
     - target: {fileID: 2954798876398279126, guid: 094a102e6f78474e3a34d6796e196610, type: 3}
       propertyPath: m_LocalPosition.z
