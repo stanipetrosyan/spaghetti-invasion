@@ -338,6 +338,11 @@ MonoBehaviour:
     - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
       line: "A writing in alien script. \n[THEY DEVOUR.  I MUST GO. MOTHER HAS TO
         KNOW THE TRUTH. MUST HIDE IN LIGHT]"
+--- !u!1 &67341743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6572578708322200997, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+  m_PrefabInstance: {fileID: 4205761546091986978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &79166522
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,6 +986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 906111745}
+  dialogueBox: {fileID: 67341743}
 --- !u!1001 &726579814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2072,7 +2078,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3798604585229642335, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
   m_PrefabInstance: {fileID: 4205761546091986978}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 67341743}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a981c3f545d046729ab4db7521db2b1d, type: 3}
