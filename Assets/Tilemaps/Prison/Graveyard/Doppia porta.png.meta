@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 62e9dece4d98eb1d7816e71f3d7a3228
+guid: ef553373a795a8a42872740ce5a1d2a3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56fb20cf9e0b31802a410beca5b6bf76
-      internalID: -107321640
+      spriteID: b633354874e32a84ca1d657e63b22ef3
+      internalID: 482382306
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7590bee8b947aeb108661b557167ca9e
-      internalID: -1575772569
+      spriteID: f1daa6b8666a21942880a0b71c90839d
+      internalID: 565965078
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 641d80f9ee3956cc586704d9ddcba5eb
+    spriteID: 0d1acb8ab52e7fc41be3f6f8ce7b2327
     internalID: 0
     vertices: []
     indices: 
@@ -149,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      st2u_x0y0-w96h96: -107321640
-      st2u_x96y0-w96h96: -1575772569
+      st2u_x0y0-w96h96: 482382306
+      st2u_x96y0-w96h96: 565965078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
