@@ -9,8 +9,8 @@ namespace UI {
         [SerializeField] private Image board;
         [SerializeField] private TextMeshProUGUI closeText;
 
-        private void Start() {
-            //this.transform.position = new Vector3(width / 2, height / 2, 0);
+        public void UpdateImage(Sprite sprite) {
+            board.sprite = sprite;
         }
         
         private void Update() {
