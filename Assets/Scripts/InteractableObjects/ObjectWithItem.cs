@@ -10,9 +10,11 @@ namespace InteractableObjects {
         private DialogueTrigger dialogueTrigger;
         [SerializeField] private List<UsableItem> items = new();
         [SerializeField] private bool destroyOnInteract;
+        private InteractableObjectLight objectLight;
         private bool interacted = false;
 
         private void Start() {
+            objectLight = GetComponent<InteractableObjectLight>();
             dialogueTrigger = GetComponent<DialogueTrigger>();
         }
 
@@ -26,6 +28,9 @@ namespace InteractableObjects {
             }
             if (destroyOnInteract) {
                 gameObject.SetActive(false);
+            }
+            if (objectLight) {
+                objectLight.DeActivate();
             }
         }
     }
