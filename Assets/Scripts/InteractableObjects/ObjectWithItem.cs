@@ -9,6 +9,7 @@ namespace InteractableObjects {
     public class ObjectWithItem : MonoBehaviour, Port.Interactable{
         private DialogueTrigger dialogueTrigger;
         [SerializeField] private List<UsableItem> items = new();
+        [SerializeField] private bool destroyOnInteract;
         private bool interacted = false;
 
         private void Start() {
@@ -22,6 +23,9 @@ namespace InteractableObjects {
             if (dialogueTrigger) {
                 dialogueTrigger.StartDialogue();
                 interacted = true;
+            }
+            if (destroyOnInteract) {
+                gameObject.SetActive(false);
             }
         }
     }
