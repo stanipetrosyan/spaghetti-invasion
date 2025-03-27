@@ -47,7 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ebb3781f2b4bc04d9336a5a2e6cbf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boardZoomed: {fileID: 0}
+  popup: {fileID: 0}
+  boardToZoom: {fileID: 0}
+  spriteToRender: {fileID: 21300000, guid: 8cf3bb1480a4e9043866d9143018ddeb, type: 3}
 --- !u!61 &7313739038546789900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -167,7 +169,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1880046832, guid: e0916987132c00a34af30112417161c5, type: 3}
+  m_Sprite: {fileID: -2113429112, guid: efbcd1d8237a7764889db694a058ccb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -191,8 +193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frequenza: 5
-  coloreMinimo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  coloreMassimo: {r: 1, g: 1, b: 1, a: 1}
+  darkerColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  lighterColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &8517755456944160131
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,7 +269,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -5267819, guid: a4107369d286599e4a1d28d05cf75865, type: 3}
+  m_Sprite: {fileID: -1179296861, guid: efbcd1d8237a7764889db694a058ccb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -291,5 +293,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frequenza: 5
-  coloreMinimo: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  coloreMassimo: {r: 1, g: 1, b: 1, a: 1}
+  darkerColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  lighterColor: {r: 1, g: 1, b: 1, a: 1}

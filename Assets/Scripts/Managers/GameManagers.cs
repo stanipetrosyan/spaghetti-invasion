@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Port;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 namespace Managers{
     public class GameManagers : MonoBehaviour {
@@ -15,6 +16,8 @@ namespace Managers{
         public static HUDManager HUD { get; private set; }
         
         private List<IManager> startSequence;
+
+        [SerializeField] private Light2D globalLight;
 
 
         void Awake() {
@@ -39,9 +42,11 @@ namespace Managers{
             Debug.Log(PlayerPrefs.GetInt("Fullscreen", 0));
             Debug.Log(PlayerPrefs.GetInt("Resolution", 0));
             
-
+            
             StartCoroutine(StartupManagers());
+            globalLight.gameObject.SetActive(false);
         }
+        
 
         private IEnumerator StartupManagers() {
             foreach (var manager in startSequence) {
