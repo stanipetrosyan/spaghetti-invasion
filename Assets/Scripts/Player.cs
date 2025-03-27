@@ -1,4 +1,3 @@
-using Dialogues;
 using Managers;
 using Port;
 using UnityEngine;
@@ -50,13 +49,6 @@ public class Player : MonoBehaviour {
                     // TODO: use sendMessage instead of get component ? 
                     if (Input.GetKeyDown(KeyCode.E)) {
                         hit.collider.gameObject.GetComponent<Interactable>().Interact();
-                    }
-
-                    break;
-                case "Dialogue":
-                    GameManagers.Interact.Activate();
-                    if (Input.GetKeyDown(KeyCode.E)) {
-                        hit.collider.gameObject.GetComponent<DialogueTrigger>().StartDialogue();
                     }
 
                     break;
