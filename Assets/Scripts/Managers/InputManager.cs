@@ -17,6 +17,7 @@ namespace Managers {
                 settings.Show();
                 
                 canMove = false;
+                Time.timeScale = 0;
             }
         }
 
@@ -26,6 +27,12 @@ namespace Managers {
 
         public void SetCanMove(bool move) {
             canMove = move;
+        }
+
+        public void CloseSettings() {
+            settings.Hide();
+            Time.timeScale = 1;
+            canMove = true;
         }
     }
 }
