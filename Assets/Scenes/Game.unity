@@ -2829,8 +2829,8 @@ GameObject:
   - component: {fileID: 1455530056}
   - component: {fileID: 1455530058}
   - component: {fileID: 1455530057}
-  - component: {fileID: 1455530060}
   - component: {fileID: 1455530059}
+  - component: {fileID: 1455530060}
   - component: {fileID: 1455530061}
   m_Layer: 3
   m_Name: Key
@@ -4068,11 +4068,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -380.75
+      value: 106
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 98.27997
+      value: -106
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.z
