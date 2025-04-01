@@ -3,7 +3,7 @@ using Port;
 using UnityEngine;
 
 namespace Dialogues {
-    public class DialogueTrigger: MonoBehaviour, Interactable{
+    public class DialogueTrigger: MonoBehaviour, Interactable {
         public Dialogue dialogue;
         private bool interacted = false;
 
@@ -12,11 +12,19 @@ namespace Dialogues {
             
             GameManagers.Dialogue.StartDialogue(dialogue);
             GameManagers.Input.SetCanMove(false);
-            interacted = true;
+            Disable();
         }
 
         public void Interact() {
             StartDialogue();
+        }
+
+        public void Enable() {
+            interacted = false;
+        }
+
+        public void Disable() {
+            interacted = true;
         }
     }
 }

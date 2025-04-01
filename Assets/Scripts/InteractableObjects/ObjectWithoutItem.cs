@@ -11,11 +11,17 @@ namespace InteractableObjects {
         }
 
         public void Interact() {
-            Debug.Log("Interacted");
-
             if (dialogueTrigger) {
                 dialogueTrigger.StartDialogue();
             }
+        }
+
+        public void Enable() {
+            throw new System.NotImplementedException();
+        }
+
+        public void Disable() {
+            throw new System.NotImplementedException();
         }
     }
 }

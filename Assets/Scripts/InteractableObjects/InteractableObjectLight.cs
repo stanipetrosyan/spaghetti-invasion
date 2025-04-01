@@ -11,11 +11,11 @@ public class InteractableObjectLight : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
     private bool active = true;
 
-    void Start() {
+    private void Start() {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Update() {
+    private void Update() {
         if (active) {
             float oscillation = Mathf.Sin(Time.time * frequenza);
             float t = (oscillation + 1f) * 0.5f;

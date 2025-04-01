@@ -2,14 +2,16 @@ using System.Collections.Generic;
 using Dialogues;
 using Inventory;
 using Managers;
+using Port;
 using UnityEngine;
 
 namespace InteractableObjects {
-    public class Door : MonoBehaviour, Port.Interactable {
+    public class Door : MonoBehaviour, Interactable {
         [SerializeField] private Dialogue success;
         [SerializeField] private Dialogue failure;
         [SerializeField] private List<UsableItem> usableItems = new List<UsableItem>();
         private bool activated = false;
+        private bool canInteract = true;
 
         public void Interact() {
             var index = 0;
@@ -27,6 +29,14 @@ namespace InteractableObjects {
             else {
                 GameManagers.Dialogue.StartDialogue(failure);
             }
+        }
+        
+        public void Enable() {
+            canInteract = true;
+        }
+
+        public void Disable() {
+            canInteract = false;
         }
 
         private bool UseItem(UsableItem item) {

@@ -33,5 +33,13 @@ namespace InteractableObjects {
                 objectLight.DeActivate();
             }
         }
+
+        public void Enable() {
+            interacted = false;
+        }
+
+        public void Disable() {
+            interacted = true;
+        }
     }
 }
