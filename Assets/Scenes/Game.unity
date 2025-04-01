@@ -1559,9 +1559,6 @@ MonoBehaviour:
       line: "Still, you pray for salvation. Nothing happens\u2026 But what is that
         glimmer to the side of the Altar?"
     - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
-      line: "Still, you pray for salvation. Nothing happens\u2026 But what is that
-        glimmer to the side of the Altar?"
-    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
       line: You have found a rusty key!
 --- !u!1 &863896298
 GameObject:
@@ -1972,7 +1969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 451060301283054992, guid: 4f5e570fbb4b4b35294ec9930d73c27e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.5
+      value: 19.9
       objectReference: {fileID: 0}
     - target: {fileID: 451060301283054992, guid: 4f5e570fbb4b4b35294ec9930d73c27e, type: 3}
       propertyPath: m_LocalPosition.z
