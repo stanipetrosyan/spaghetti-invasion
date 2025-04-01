@@ -53,6 +53,7 @@ public class Player : MonoBehaviour {
 
                     break;
                 default:
+                    GameManagers.Interact.Deactivate();
                     break;
             }
         }
