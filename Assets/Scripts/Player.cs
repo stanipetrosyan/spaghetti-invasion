@@ -24,6 +24,10 @@ public class Player : MonoBehaviour {
         transformed = true;
     }
 
+    public bool IsTransformed() {
+        return transformed;
+    }
+
     private void Update() {
         ManageAnxiety();
 
