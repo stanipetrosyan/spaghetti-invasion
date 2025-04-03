@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 namespace Managers {
     public class GameOverManager: MonoBehaviour, IManager {
 
-        public string gameOverReason;
         public ManagerStatus Status { get; set; }
 
         public void Startup() {
@@ -14,7 +13,7 @@ namespace Managers {
         }
 
         public void GameOver(string reason) {
-            gameOverReason = reason;
+            PlayerPrefs.SetString("GameOverReason", reason);
             SceneManager.LoadScene("GameOver");
         }
     }
