@@ -3213,7 +3213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0777ece03bf41c38210bdfad73576c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 10
+  radius: 100
 --- !u!1 &1455530055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4586,11 +4586,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.2
+      value: -222.4
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 49.6
+      value: 26.2
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5000,7 +5000,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5415813979668252334, guid: 640ab8827b482eaf69f177f48f812c33, type: 3}
-      insertIndex: -1
+      insertIndex: 2
       addedObject: {fileID: 1405549871}
   m_SourcePrefab: {fileID: 100100000, guid: 640ab8827b482eaf69f177f48f812c33, type: 3}
 --- !u!1001 &8806841962256226880
