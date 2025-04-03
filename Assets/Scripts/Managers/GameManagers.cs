@@ -15,6 +15,8 @@ namespace Managers{
         
         public static HUDManager HUD { get; private set; }
         
+        public static GameOverManager GameOver { get; private set; }
+        
         private List<IManager> startSequence;
 
         [SerializeField] private Light2D globalLight;
@@ -27,6 +29,7 @@ namespace Managers{
             Input = GetComponent<InputManager>();
             Interact = GetComponent<InteractManager>();
             HUD = GetComponent<HUDManager>();
+            GameOver = GetComponent<GameOverManager>();
             
             startSequence = new List<IManager>() {
                 Input,
@@ -34,7 +37,8 @@ namespace Managers{
                 Audio,
                 Inventory,
                 Interact,
-                HUD
+                HUD,
+                GameOver
             };
 
             Debug.Log(PlayerPrefs.GetFloat("Volume", 0));

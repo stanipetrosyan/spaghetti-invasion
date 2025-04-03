@@ -1,3 +1,4 @@
+using Managers;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Serialization;
@@ -42,8 +43,11 @@ public class AnxietyCounter : MonoBehaviour {
     }
 
     public void IncreaseAnxiety(float amount) {
-        if (anxiety >= 25) return;
-        
+        if (anxiety >= 25) {
+            GameManagers.GameOver.GameOver("Sei diventato uno di loro");
+            return;
+        }
+
         anxiety += amount * Time.deltaTime;
     }
     
