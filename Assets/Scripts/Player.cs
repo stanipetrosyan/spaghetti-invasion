@@ -87,4 +87,8 @@ public class Player : MonoBehaviour {
 
         rb.velocity = movement;
     }
+
+    public void GameOver(string reason) {
+        GameManagers.GameOver.GameOver(reason);
+    }
 }

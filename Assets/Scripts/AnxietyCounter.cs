@@ -1,4 +1,5 @@
 using Managers;
+using UnityEditor.Networking.PlayerConnection;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Serialization;
@@ -10,6 +11,7 @@ public class AnxietyCounter : MonoBehaviour {
 
     [SerializeField] private Light2D light2D;
     [SerializeField] private Camera gameCamera;
+    [SerializeField] private Player player;
     private float minimum = 26f;
     private float maximum;
 
@@ -44,7 +46,7 @@ public class AnxietyCounter : MonoBehaviour {
 
     public void IncreaseAnxiety(float amount) {
         if (anxiety >= 25) {
-            GameManagers.GameOver.GameOver("Sei diventato uno di loro");
+            player.GameOver("Sei diventato uno di loro");
             return;
         }
 
