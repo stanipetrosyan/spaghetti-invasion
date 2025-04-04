@@ -385,6 +385,7 @@ Transform:
   - {fileID: 665788294}
   - {fileID: 337949334}
   - {fileID: 2107117435}
+  - {fileID: 2058684106}
   m_Father: {fileID: 2049408415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &162690432 stripped
@@ -755,7 +756,7 @@ Transform:
   m_GameObject: {fileID: 337949331}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 253.19995, y: 98.79999, z: 0}
+  m_LocalPosition: {x: 253.19995, y: 32.4, z: 0}
   m_LocalScale: {x: 15, y: 15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1896,11 +1897,14 @@ MonoBehaviour:
         Monster, the deity of the official religion of your planet. You have never
         really been a faithful one\u2026"
     - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
-      line: "Still, you pray for salvation. Nothing happens\u2026 But what is that
-        glimmer to the side of the Altar?"
+      line: Still, you pray for salvation. The words form in your mind.
     - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
-      line: "Still, you pray for salvation. Nothing happens\u2026 But what is that
-        glimmer to the side of the Altar?"
+      line: "Oh you Great One of the Dish, \nMay I never be overcook\u2019d, May
+        I not enter skirmish, May I never be downlook.\nOh, you Great One grant me
+        strength\nIf I lack, ah! Do please lend\nIf around you all revolves \nLet
+        my heart be of Resolve.\n"
+    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
+      line: "Nothing happens\u2026 But what is that glimmer to the side of the Altar?"
     - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
       line: You have found a rusty key!
 --- !u!1 &863896298
@@ -2081,76 +2085,6 @@ GameObject:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2954798876398279126, guid: 094a102e6f78474e3a34d6796e196610, type: 3}
   m_PrefabInstance: {fileID: 8806841962256226880}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &911425810
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1763701154}
-    m_Modifications:
-    - target: {fileID: 1011545850971224189, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: usableItems.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 17640379a979cea3889cf34d9a6455a8, type: 2}
-    - target: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -95.849976
-      objectReference: {fileID: 0}
-    - target: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 75.29999
-      objectReference: {fileID: 0}
-    - target: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934477051882798813, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8173967867320320504, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-      propertyPath: m_Name
-      value: Door
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
---- !u!4 &911425811 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
-  m_PrefabInstance: {fileID: 911425810}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &946916380
 GameObject:
@@ -3913,7 +3847,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 911425811}
   - {fileID: 854675799}
   - {fileID: 1048301240}
   - {fileID: 873511301}
@@ -4187,6 +4120,102 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2058684105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058684106}
+  - component: {fileID: 2058684108}
+  - component: {fileID: 2058684107}
+  m_Layer: 3
+  m_Name: WoodenBed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2058684106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058684105}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 273.6, y: 79.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 79166523}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2058684107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058684105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb60a2843ea499e962832b2ddf1884f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    lines:
+    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
+      line: "There seems to be something written on the wooden bed. The beginning
+        of a story\u2026 \u2018The Chosen One is lost in a cage. But then, Oscar
+        drops a key from a hole in the ceiling\u2026\u2019 "
+--- !u!61 &2058684108
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058684105}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10}
+  m_EdgeRadius: 0
 --- !u!1001 &2084180367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4640,7 +4669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 184.7
+      value: 246.2
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4677,6 +4706,10 @@ PrefabInstance:
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482482148912066165, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
+      propertyPath: radius
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7482482148912066165, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: interactableLayer.m_Bits
@@ -5073,11 +5106,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1568277709000808996, guid: c50488d529b0aecf8ab6ac2b825a83d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 57.9
+      value: 57.54
       objectReference: {fileID: 0}
     - target: {fileID: 1568277709000808996, guid: c50488d529b0aecf8ab6ac2b825a83d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -162.4
+      value: -164.7
       objectReference: {fileID: 0}
     - target: {fileID: 1568277709000808996, guid: c50488d529b0aecf8ab6ac2b825a83d6, type: 3}
       propertyPath: m_LocalPosition.z
