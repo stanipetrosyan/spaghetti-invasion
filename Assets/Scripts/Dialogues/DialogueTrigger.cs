@@ -26,5 +26,9 @@ namespace Dialogues {
         public void Disable() {
             interacted = true;
         }
+
+        public bool CanInteract() {
+            return !interacted;
+        }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using Managers;
 using Port;
 using UI;
@@ -28,6 +29,10 @@ namespace InteractableObjects {
 
         public void Disable() {
             canInteract = false;
+        }
+
+        public bool CanInteract() {
+            return canInteract;
         }
     }
 }

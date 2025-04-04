@@ -39,6 +39,10 @@ namespace InteractableObjects {
             canInteract = false;
         }
 
+        public bool CanInteract() {
+            return canInteract;
+        }
+
         private bool UseItem(UsableItem item) {
             List<UsableItem> keys = GameManagers.Inventory.GetAllOfType(item.type);
 

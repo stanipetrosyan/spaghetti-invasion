@@ -5,5 +5,7 @@ namespace Port {
         public void Enable();
         
         public void Disable();
+        
+        public bool CanInteract();
     }
 }

@@ -11,7 +11,7 @@ namespace InteractableObjects {
         [SerializeField] private List<UsableItem> items = new();
         [SerializeField] private bool destroyOnInteract;
         private InteractableObjectLight objectLight;
-        private bool interacted = false;
+        public bool interacted = false;
 
         private void Start() {
             objectLight = GetComponent<InteractableObjectLight>();
@@ -40,6 +40,10 @@ namespace InteractableObjects {
 
         public void Disable() {
             interacted = true;
+        }
+
+        public bool CanInteract() {
+            return !interacted;
         }
     }
 }

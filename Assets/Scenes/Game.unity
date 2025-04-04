@@ -305,7 +305,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -797,6 +797,7 @@ MonoBehaviour:
   items:
   - {fileID: 11400000, guid: 7ffda0ee0f4d46c5ba957901365fb776, type: 2}
   destroyOnInteract: 0
+  interacted: 0
 --- !u!61 &466061546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1345,7 +1346,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactables:
   - {fileID: 466061542}
+  - {fileID: 1293798633}
+  - {fileID: 1645100087}
   - {fileID: 59680122}
+  - {fileID: 1279043002}
+  sequence: {fileID: 1052586535}
+  wall: {fileID: 1279043002}
 --- !u!4 &679958411 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
@@ -1596,6 +1602,7 @@ MonoBehaviour:
   items:
   - {fileID: 11400000, guid: 17640379a979cea3889cf34d9a6455a8, type: 2}
   destroyOnInteract: 0
+  interacted: 0
 --- !u!114 &854675802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2119,9 +2126,6 @@ MonoBehaviour:
   - lines:
     - character: {fileID: 11400000, guid: 642f831ecb14e05958e9233a7fa55b65, type: 2}
       line: I know you can! To the wall! The broken tile!
-  - lines:
-    - character: {fileID: 11400000, guid: 642f831ecb14e05958e9233a7fa55b65, type: 2}
-      line: "I was certain I heard someone\u2026"
   timeBetweenDialogues: 10
 --- !u!4 &1052586536
 Transform:
@@ -2705,7 +2709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f78694753749bea4d7de204be3582c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workflow: {fileID: 0}
 --- !u!1001 &1281205749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3332,6 +3335,7 @@ MonoBehaviour:
   items:
   - {fileID: 11400000, guid: df914a8ffced53c40bff0df9c225f17c, type: 2}
   destroyOnInteract: 1
+  interacted: 0
 --- !u!114 &1455530060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3482,7 +3486,6 @@ GameObject:
   - component: {fileID: 1645100088}
   - component: {fileID: 1645100091}
   - component: {fileID: 1645100090}
-  - component: {fileID: 1645100089}
   m_Layer: 3
   m_Name: BreakTile
   m_TagString: Untagged
@@ -3505,18 +3508,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1052586536}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1645100089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645100087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f095eaf46b034005bc0b862eddbc7cd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1645100090
 MonoBehaviour:
   m_ObjectHideFlags: 0

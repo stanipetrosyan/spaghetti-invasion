@@ -5,7 +5,6 @@ using UnityEngine;
 
 namespace InteractableObjects {
     public class BreakWallCell: MonoBehaviour, Interactable {
-        [SerializeField] private CellsWorkflow workflow;
         private DialogueTrigger dialogueTrigger;
         private bool canInteract = true;
 
@@ -14,8 +13,6 @@ namespace InteractableObjects {
         }
         
         public void Interact() {
-            workflow.EnableInteraction();
-            
             dialogueTrigger.StartDialogue();
         }
 
@@ -25,6 +22,10 @@ namespace InteractableObjects {
 
         public void Disable() {
             canInteract = false;
+        }
+
+        public bool CanInteract() {
+            return canInteract;
         }
     }
 }

@@ -7,6 +7,7 @@ namespace Dialogues {
     public class DialogueSequence : MonoBehaviour {
         [SerializeField] private List<Dialogue> dialogueList;
         public float timeBetweenDialogues = 3f;
+        private bool finished = false;
 
 
         private void Start() {
@@ -20,6 +21,12 @@ namespace Dialogues {
 
                 GameManagers.Dialogue.StartDialogue(dialogue);
             }
+            
+            finished = true;
+        }
+
+        public bool IsFinished() {
+            return finished;
         }
     }
 }
