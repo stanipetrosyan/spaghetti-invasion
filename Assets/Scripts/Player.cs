@@ -67,7 +67,7 @@ public class Player : MonoBehaviour {
 
     private void ManageAnxiety() {
         if (transformed) anxietyCounter.IncreaseAnxiety(0.5f);
-        else anxietyCounter.DecreaseAnxiety(0.5f);
+        else anxietyCounter.DecreaseAnxiety(1.5f);
     }
 
     private void Move() {
