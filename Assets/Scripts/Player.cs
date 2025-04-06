@@ -45,8 +45,6 @@ public class Player : MonoBehaviour {
         if (hit.collider is not null) {
             UnityEngine.Debug.DrawLine(transform.position, hit.point, Color.red);
             switch (LayerMask.LayerToName(hit.collider.gameObject.layer)) {
-                case "Light":
-                    break;
                 case "Interactable":
                     if (hit.collider.gameObject.GetComponent<Interactable>().CanInteract()) {
                         GameManagers.Interact.Activate();

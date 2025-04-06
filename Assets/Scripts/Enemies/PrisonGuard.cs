@@ -1,11 +1,18 @@
 using System.Collections.Generic;
 using Managers;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 namespace Enemies {
     public class PrisonGuard: MonoBehaviour {
-        public float radius;
-        
+        private Light2D light2D;
+        private float radius;
+
+
+        private void Start() {
+            light2D = GetComponent<Light2D>();
+            radius = light2D.pointLightOuterRadius;
+        }
         private void Update() {
             Debug.DrawCircle(transform.position, radius, 32, Color.green);
             

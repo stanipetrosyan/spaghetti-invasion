@@ -11,7 +11,7 @@ namespace Managers {
         }
 
         private void Start() {
-            //prisonAudio.Play();
+            prisonAudio.Play();
         }
 
         public void PlayHeartBeat() {

@@ -1311,73 +1311,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9172545898912583577, guid: adfc4f7d21b99b8a680897c79815d439, type: 3}
   m_PrefabInstance: {fileID: 479123995}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &511953496
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 946916381}
-    m_Modifications:
-    - target: {fileID: 3043794628207485203, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: dialogue.lines.Array.data[0].line
-      value: "Ehi, you still haven\u2019t found your key? Wait till Ferruccio finds
-        out\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 57.45407
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.845093
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.3069977
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415813979668252334, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_Name
-      value: PrisonGuard (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
---- !u!4 &511953497 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-  m_PrefabInstance: {fileID: 511953496}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &587873008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,7 +1322,7 @@ GameObject:
   - component: {fileID: 587873010}
   - component: {fileID: 587873009}
   m_Layer: 0
-  m_Name: AudioSource
+  m_Name: PrisonAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1405,11 +1338,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 33fe5b27434c890feac054fe7c18b08c, type: 2}
-  m_audioClip: {fileID: 8300000, guid: bd99cca1828485c1aa97e19e71644097, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a4c93cef066fb7b1aa86bce82f05c9ae, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2275,7 +2208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4218529130788401495, guid: 4f5e570fbb4b4b35294ec9930d73c27e, type: 3}
       propertyPath: m_Name
-      value: Light (1)
+      value: Light Nord
       objectReference: {fileID: 0}
     - target: {fileID: 5385499080585472654, guid: 4f5e570fbb4b4b35294ec9930d73c27e, type: 3}
       propertyPath: m_SortingOrder
@@ -2338,10 +2271,6 @@ Transform:
   - {fileID: 1561173348}
   - {fileID: 196559769}
   - {fileID: 1247249331}
-  - {fileID: 1940561400}
-  - {fileID: 2040341312}
-  - {fileID: 1194032392}
-  - {fileID: 511953497}
   - {fileID: 1565410440}
   m_Father: {fileID: 2049408415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2395,7 +2324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4218529130788401495, guid: 4f5e570fbb4b4b35294ec9930d73c27e, type: 3}
       propertyPath: m_Name
-      value: Light
+      value: LightSud
       objectReference: {fileID: 0}
     - target: {fileID: 5385499080585472654, guid: 4f5e570fbb4b4b35294ec9930d73c27e, type: 3}
       propertyPath: m_SortingOrder
@@ -2471,94 +2400,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
   m_PrefabInstance: {fileID: 1609253111}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1194032391
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 946916381}
-    m_Modifications:
-    - target: {fileID: 2338289863104574968, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2338289863104574968, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8024495
-      objectReference: {fileID: 0}
-    - target: {fileID: 2338289863104574968, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5707547
-      objectReference: {fileID: 0}
-    - target: {fileID: 2338289863104574968, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_PointLightInnerRadius
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2338289863104574968, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_PointLightOuterRadius
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3043794628207485203, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: dialogue.lines.Array.data[0].line
-      value: I asked to be transferred to the Control Room upstairs. I have heard
-        security is so high that guards basically do nothing. There just to make
-        Ferruccio feel safe, you know?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 166.85495
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 53.062866
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.3069977
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415813979668252334, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_Name
-      value: PrisonGuard (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
---- !u!4 &1194032392 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-  m_PrefabInstance: {fileID: 1194032391}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1195605809 stripped
 Transform:
@@ -4080,11 +3921,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!4 &1940561400 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-  m_PrefabInstance: {fileID: 1102845245316942901}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2023995192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4154,80 +3990,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4314746038580167895, guid: 3cdec4eacdc5eab19af1a26bae01b6dd, type: 3}
   m_PrefabInstance: {fileID: 2023995192}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2040341311
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 946916381}
-    m_Modifications:
-    - target: {fileID: 3043794628207485203, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: dialogue.lines.Array.data[0].line
-      value: "ah infame, don\u2019t even try it, you snitch!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 151.22626
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -28.130127
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.3069977
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415813979668252334, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_Name
-      value: PrisonGuard
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
---- !u!4 &2040341312 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-  m_PrefabInstance: {fileID: 2040341311}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2049408411
 GameObject:
@@ -4328,13 +4090,13 @@ RectTransform:
   - {fileID: 2084180368}
   - {fileID: 368259495}
   - {fileID: 679958411}
-  - {fileID: 1671155285}
   - {fileID: 79166523}
   - {fileID: 946916381}
   - {fileID: 2118086298}
   - {fileID: 1763701154}
   - {fileID: 229809172}
   - {fileID: 1530122162}
+  - {fileID: 1671155285}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4621,67 +4383,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 6691333669591980799, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
   m_PrefabInstance: {fileID: 2310583242809484973}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1102845245316942901
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 946916381}
-    m_Modifications:
-    - target: {fileID: 3043794628207485203, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: dialogue.lines.Array.data[0].line
-      value: "Oh? A waiter, here? You must be lost\u2026Upstairs, to the kitchens!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 102.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 68.07997
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415813979668252334, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: m_Name
-      value: PrisonGuard
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
 --- !u!1001 &1409105506444220858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4911,11 +4612,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.4
+      value: -177.8
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 120.6
+      value: 31.2
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.z
