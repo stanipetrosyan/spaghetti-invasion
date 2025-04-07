@@ -85,7 +85,7 @@ public class AnxietyCounter : MonoBehaviour {
 
     public void IncreaseAnxiety(float amount) {
         if (anxiety >= 25) {
-            player.GameOver("Sei diventato uno di loro");
+            player.GameOver(Reason.Light);
             return;
         }
 
