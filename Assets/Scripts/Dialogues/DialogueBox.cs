@@ -24,11 +24,7 @@ namespace Dialogues {
         }
 
         public void StartDialogue(Dialogue dialogue) {
-            if (IsDialogueActive) return;
-
             IsDialogueActive = true;
-
-            dialogueLines.Clear();
 
             foreach (var line in dialogue.lines) {
                 dialogueLines.Enqueue(line);
@@ -37,7 +33,7 @@ namespace Dialogues {
             DisplayNextDialogueLine();
         }
 
-        void DisplayNextDialogueLine() {
+        private void DisplayNextDialogueLine() {
             if (dialogueLines.Count == 0) {
                 EndDialogue();
                 return;
@@ -64,6 +60,7 @@ namespace Dialogues {
         private void EndDialogue() {
             IsDialogueActive = false;
             gameObject.SetActive(false);
+            dialogueLines.Clear();
             
             GameManagers.Input.SetCanMove(true);
         }

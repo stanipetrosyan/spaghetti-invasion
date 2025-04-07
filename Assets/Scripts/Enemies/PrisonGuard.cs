@@ -23,9 +23,9 @@ namespace Enemies {
                 if (hit.collider is not null) {
                     var player = hit.collider.gameObject.GetComponent<Player>();
                     if (player && !player.IsTransformed()) {
-                        player.GameOver(Reason.Guard);
+                       // player.GameOver(Reason.Guard);
+                        Debug.Log(!player.IsTransformed());
                     }
-                    UnityEngine.Debug.DrawLine(transform.position, hit.point, Color.red);
                 }    
             }
         

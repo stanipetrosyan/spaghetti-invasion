@@ -15,7 +15,7 @@ namespace Inventory{
         }
         
         public enum Type {
-            KEY, SHARP
+            KEY, SHARP, ALTAR_KEY
         }
     }
 }
