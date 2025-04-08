@@ -2,12 +2,12 @@ using System.Collections.Generic;
 using Dialogues;
 using Inventory;
 using Managers;
+using Port;
 using UnityEngine;
 
 namespace InteractableObjects {
-    [RequireComponent(typeof(DialogueTrigger))]
-    public class ObjectWithItem : MonoBehaviour, Port.Interactable{
-        private DialogueTrigger dialogueTrigger;
+    public class Altar : MonoBehaviour, Interactable {
+        [SerializeField] private Dialogue dialogue;
         [SerializeField] private List<UsableItem> items = new();
         [SerializeField] private bool destroyOnInteract;
         private InteractableObjectLight objectLight;
@@ -15,21 +15,19 @@ namespace InteractableObjects {
 
         private void Start() {
             objectLight = GetComponent<InteractableObjectLight>();
-            dialogueTrigger = GetComponent<DialogueTrigger>();
         }
 
         public void Interact() {
             if (interacted) return;
-            Debug.Log("Interacted");
+            
             GameManagers.Inventory.Add(items);
-
-            if (dialogueTrigger) {
-                dialogueTrigger.StartDialogue();
-                interacted = true;
-            }
+            GameManagers.Dialogue.StartDialogue(dialogue);
+            interacted = true;
+            
             if (destroyOnInteract) {
                 gameObject.SetActive(false);
             }
+
             if (objectLight) {
                 objectLight.DeActivate();
             }

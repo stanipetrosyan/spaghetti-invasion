@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Dialogues;
 using Inventory;
@@ -45,6 +46,7 @@ namespace InteractableObjects {
 
         private bool UseItem(UsableItem item) {
             List<UsableItem> keys = GameManagers.Inventory.GetAllOfType(item.type);
+            UnityEngine.Debug.Log(item.type);
 
             if (keys.Count <= 0) return false;
 

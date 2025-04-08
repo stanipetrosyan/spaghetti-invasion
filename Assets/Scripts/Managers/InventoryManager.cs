@@ -21,6 +21,9 @@ namespace Managers{
 
         public void Add(List<UsableItem> item) {
             inventory.AddRange(item);
+            foreach (var it in inventory) {
+                Debug.Log(it.type);
+            }
         }
 
         public List<UsableItem> GetAllOfType(UsableItem.Type type){

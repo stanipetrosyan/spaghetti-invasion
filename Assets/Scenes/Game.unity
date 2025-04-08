@@ -388,120 +388,11 @@ Transform:
   - {fileID: 2058684106}
   m_Father: {fileID: 2049408415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &84424845
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 84424846}
-  - component: {fileID: 84424848}
-  - component: {fileID: 84424849}
-  m_Layer: 8
-  m_Name: Graveyard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &84424846
+--- !u!4 &84424846 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8297409220778722780, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+  m_PrefabInstance: {fileID: 4806163227408383623}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84424845}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -23.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 748407175}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &84424848
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84424845}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 40, y: 40}
-  m_EdgeRadius: 0
---- !u!114 &84424849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84424845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1cd69d63e114960bfb34033b7dc1c65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 679958415}
-  climaxDialogue:
-    lines:
-    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
-      line: "Those remains\u2026 Could they be? They can\u2019t be\u2026"
-    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
-      line: "The <Spaghetti Invasion>... The Italians\u2026"
-    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
-      line: "- THEY DEVOUR. - The remains in the dirt\u2026 Belong to your kind.
-        - THEY DEVOUR - They will eat you. Devour you. Consume you to the very bones\u2026"
-  calmDialogue:
-    lines:
-    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
-      line: "You took a calming breath, in the stale air of the basement. You look
-        into yourself, and to your own surprise, you find resolve. \n"
-    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
-      line: 'You will call the Mother Ship. You will tell them everything and you
-        will start the invasion. You will set things right.
-
-'
-    - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
-      line: 'I must reach the control room and call for Mother!!.
-
-'
 --- !u!4 &162690432 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6833200898019707835, guid: 68c9686407daaf22a88223c98ddcabe7, type: 3}
@@ -654,6 +545,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 946916381}
     m_Modifications:
+    - target: {fileID: 872221061532789775, guid: 3cff819840f7deccfa55168faa64062f, type: 3}
+      propertyPath: usableItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 816b9e41c61a842c98f40fcd7f49f9b7, type: 2}
     - target: {fileID: 5925170310313465265, guid: 3cff819840f7deccfa55168faa64062f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 193.88
@@ -2091,8 +1986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 854675799}
   - component: {fileID: 854675800}
-  - component: {fileID: 854675802}
-  - component: {fileID: 854675801}
+  - component: {fileID: 854675803}
   m_Layer: 3
   m_Name: Altar
   m_TagString: Untagged
@@ -2164,7 +2058,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.0491943, y: 6.5613403}
   m_EdgeRadius: 0
---- !u!114 &854675801
+--- !u!114 &854675803
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2173,23 +2067,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 854675798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91197879f5f7480182157b863364d62c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items:
-  - {fileID: 11400000, guid: 17640379a979cea3889cf34d9a6455a8, type: 2}
-  destroyOnInteract: 0
-  interacted: 0
---- !u!114 &854675802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854675798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fb60a2843ea499e962832b2ddf1884f, type: 3}
+  m_Script: {fileID: 11500000, guid: a942447cafc34e1f9389c721c988955c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
@@ -2209,6 +2087,10 @@ MonoBehaviour:
       line: "Nothing happens\u2026 But what is that glimmer to the side of the Altar?"
     - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
       line: You have found a rusty key!
+  items:
+  - {fileID: 11400000, guid: 17640379a979cea3889cf34d9a6455a8, type: 2}
+  destroyOnInteract: 0
+  interacted: 0
 --- !u!1 &863896298
 GameObject:
   m_ObjectHideFlags: 0
@@ -4049,6 +3931,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -24.58
       objectReference: {fileID: 0}
+    - target: {fileID: 3373613366472379518, guid: 480fb56f3364fe3f6b76846d9f827a76, type: 3}
+      propertyPath: items.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 816b9e41c61a842c98f40fcd7f49f9b7, type: 2}
+    - target: {fileID: 4556424941800940345, guid: 480fb56f3364fe3f6b76846d9f827a76, type: 3}
+      propertyPath: dialogue.lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4556424941800940345, guid: 480fb56f3364fe3f6b76846d9f827a76, type: 3}
+      propertyPath: dialogue.lines.Array.data[0].line
+      value: "Something shines in the loose dirt. With trembling hands, you reach
+        for it\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4556424941800940345, guid: 480fb56f3364fe3f6b76846d9f827a76, type: 3}
+      propertyPath: dialogue.lines.Array.data[1].line
+      value: You have found the key to the upper floors!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4556424941800940345, guid: 480fb56f3364fe3f6b76846d9f827a76, type: 3}
+      propertyPath: dialogue.lines.Array.data[1].character
+      value: 
+      objectReference: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
     - target: {fileID: 7455682745598746508, guid: 480fb56f3364fe3f6b76846d9f827a76, type: 3}
       propertyPath: m_Name
       value: Key
@@ -4775,11 +4678,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -513.6
+      value: -187
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -31.8
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4949,6 +4852,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
+--- !u!1001 &4806163227408383623
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 748407175}
+    m_Modifications:
+    - target: {fileID: 2388230330874850504, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 679958415}
+    - target: {fileID: 3414435383903959940, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_Name
+      value: Graveyard
+      objectReference: {fileID: 0}
+    - target: {fileID: 3414435383903959940, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297409220778722780, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297409220778722780, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -23.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297409220778722780, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297409220778722780, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297409220778722780, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297409220778722780, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297409220778722780, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297409220778722780, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297409220778722780, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297409220778722780, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
 --- !u!1001 &4811824805689541312
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ namespace Dialogues {
         private bool canInteract = true;
 
         public void StartDialogue() {
-            if (canInteract) return;
+            if (!canInteract) return;
             
             GameManagers.Dialogue.StartDialogue(dialogue);
             GameManagers.Input.SetCanMove(false);
