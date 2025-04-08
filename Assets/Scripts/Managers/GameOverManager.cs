@@ -1,25 +1,21 @@
-using System;
 using System.Collections.Generic;
 using Dialogues;
+using Domain;
 using Port;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 namespace Managers {
-    public class GameOverManager: MonoBehaviour, IManager{
-
+    public class GameOverManager : MonoBehaviour, IManager {
         [SerializeField] private DialogueCharacter player;
-        [FormerlySerializedAs("opponent")] [SerializeField] private DialogueCharacter guard;
-        
-        private DialogueTrigger dialogueTrigger;
+        [SerializeField] private DialogueCharacter guard;
+
         private bool gameOver = false;
 
         public ManagerStatus Status { get; set; }
 
         public void Startup() {
             Status = ManagerStatus.Started;
-            dialogueTrigger = new DialogueTrigger();
         }
 
         private void Update() {
@@ -29,49 +25,32 @@ namespace Managers {
         }
 
         public void GameOver(Reason reason) {
-            PlayerPrefs.SetString("GameOverReason", getReason(reason));
+            PlayerPrefs.SetString("GameOverReason", GetReason(reason));
 
-            Dialogue dialogue = getDialogue(reason);
-            dialogueTrigger.dialogue = dialogue;
-            dialogueTrigger.StartDialogue();
+            Dialogue dialogue = GetDialogue(reason);
+            GameManagers.Dialogue.StartDialogue(dialogue);
             gameOver = true;
         }
 
-        private string getReason(Reason reason) {
-            switch (reason) {
-                case Reason.Light:
-                    return "You became one of them";
-                case Reason.Guard:
-                    return "They caught you and ate you!";
-                default:
-                    return "ERR";
-            }
+        private static string GetReason(Reason reason) {
+            return reason switch {
+                Reason.Light => "You became one of them",
+                Reason.Guard => "They caught you and ate you!",
+                _ => "ERR"
+            };
         }
 
-        private Dialogue getDialogue(Reason reason) {
+        private Dialogue GetDialogue(Reason reason) {
+            var line = reason switch {
+                Reason.Light => new DialogueLine(player, "DIALOGO MORTE PER LUCE"),
+                Reason.Guard => new DialogueLine(guard, "DIALOGO MORTE PER GUARDIA"),
+                _ => new DialogueLine(player, "getDialog(reason)")
+            };
 
-            DialogueLine line = new DialogueLine(player, "getDialog(reason)");
-            
-            switch (reason) {
-                case Reason.Light:
-                    line = new DialogueLine(player, "DIALOGO MORTE PER LUCE");
-                    break;
-                case Reason.Guard:
-                    line = new DialogueLine(guard, "DIALOGO MORTE PER GUARDIA");
-                    break;
-                default:
-                    line = new DialogueLine(player, "getDialog(reason)");
-                    break;
-            }
-            
-            Dialogue dialogue = new Dialogue();
-            dialogue.lines = new List<DialogueLine>{line};
+            var dialogue = new Dialogue {
+                lines = new List<DialogueLine> { line }
+            };
             return dialogue;
         }
     }
-}
-
-public enum Reason{
-    Light,
-    Guard
 }

@@ -1,3 +1,4 @@
+using Domain;
 using Managers;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
@@ -91,6 +92,12 @@ public class AnxietyCounter : MonoBehaviour {
 
         hasAnxiety = true;
         anxiety += amount * Time.deltaTime;
+    }
+
+    public void SetAnxiety(float amount) {
+        anxiety = amount;
+        
+        hasAnxiety = true;
     }
 
 

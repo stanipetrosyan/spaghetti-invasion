@@ -1,3 +1,4 @@
+using Domain;
 using Managers;
 using Port;
 using UnityEngine;
@@ -53,6 +54,9 @@ public class Player : MonoBehaviour {
                         }
                     }
                     break;
+                case "Graveyard": 
+                    hit.collider.gameObject.GetComponent<Workflow>().Trigger();
+                    break;
                 default:
                     GameManagers.Interact.Deactivate();
                     break;
@@ -61,6 +65,16 @@ public class Player : MonoBehaviour {
         else {
             GameManagers.Interact.Deactivate();
         }
+    }
+    
+    public void MaximizeAnxiety() {
+        anxietyCounter.SetAnxiety(24f);
+        GameManagers.Audio.PlayDeath();
+    }
+    
+    public void MinimizeAnxiety() {
+        anxietyCounter.SetAnxiety(15f);
+        GameManagers.Audio.StopDeath();
     }
 
     private void ManageAnxiety() {

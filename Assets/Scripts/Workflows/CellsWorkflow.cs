@@ -3,7 +3,7 @@ using Dialogues;
 using Port;
 using UnityEngine;
 
-namespace Prison {
+namespace Workflows {
     public class CellsWorkflow: MonoBehaviour {
         [SerializeField] private List<GameObject> interactables;
         [SerializeField] private DialogueSequence sequence;

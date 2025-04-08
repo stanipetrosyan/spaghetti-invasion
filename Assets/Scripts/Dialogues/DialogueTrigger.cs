@@ -5,10 +5,10 @@ using UnityEngine;
 namespace Dialogues {
     public class DialogueTrigger: MonoBehaviour, Interactable {
         public Dialogue dialogue;
-        private bool interacted = false;
+        private bool canInteract = true;
 
         public void StartDialogue() {
-            if (interacted) return;
+            if (canInteract) return;
             
             GameManagers.Dialogue.StartDialogue(dialogue);
             GameManagers.Input.SetCanMove(false);
@@ -20,15 +20,15 @@ namespace Dialogues {
         }
 
         public void Enable() {
-            interacted = false;
+            canInteract = true;
         }
 
         public void Disable() {
-            interacted = true;
+            canInteract = false;
         }
 
         public bool CanInteract() {
-            return !interacted;
+            return canInteract;
         }
     }
 }

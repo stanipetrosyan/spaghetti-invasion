@@ -1,6 +1,5 @@
 using Dialogues;
 using Port;
-using Prison;
 using UnityEngine;
 
 namespace InteractableObjects {
