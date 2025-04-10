@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: cf06de3802f97eb4a8dfe605ff2ae34a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 57
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5658389f518d540858bb7f6a7d1dd0
+      internalID: -578564455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 58
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1e5533bd6acc046b0bc1e9069f16d1
+      internalID: 2059736855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 59
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e5c2036504b7f41933d9e89dc7a820
+      internalID: 420712539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 60
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e4112a2f8fc88439cac3669cb0f8ea
+      internalID: -2100924538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 61
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a0eba99269a0e438ef8f9651f5c6de
+      internalID: 105485030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 62
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e908b64373bedaa408215114dc69bfb6
+      internalID: 1900953108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 63
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a0e59de60272643a425cd999a54f83
+      internalID: 1949462409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 64
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bc9f0e6a86a2f4598cf8bce6e44131
+      internalID: 885798882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 65
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a81b7f3a94df546aa550bf2f40ffd6
+      internalID: 966864834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 66
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49daf4abce45914c9f4f890a9a18705
+      internalID: -1995494254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 67
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4288cec4b4b3d4986941dc1796a315
+      internalID: 340113164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 68
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b00bd1c743ac644b500fd5feec4134
+      internalID: 1702116972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 69
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fbae21c29ab6f46af083e1c5f1cb6d
+      internalID: 255709955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 70
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d995e1b94e287084f848b25e15dd3832
+      internalID: -237570257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 71
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2156460e2be44468d91cd5a6a91864
+      internalID: -1354956084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 72
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e68ac1fe7a156143b421caa132c2a04
+      internalID: 1930359658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 73
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d501bb697447d49a24408d92d55007
+      internalID: 455625067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 74
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2887cc73fd460e24c910b5f7256300cd
+      internalID: -1950873045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 75
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d83a3ebbf99e9b42923540960634fbd
+      internalID: 1799129157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 76
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437ef41dabaa29d4a912a36f4e2ca5d0
+      internalID: 1455398792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 77
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9834540692ed8c64295cf2cc65879472
+      internalID: 1715812976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 80
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7771b4f00f622604596be3e48db5b0de
+      internalID: -2121830918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 82
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870a23b8023a7174d8ca9b368001cd77
+      internalID: -1339785511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 84
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6eef994caa45945bf5f0b52e6a1fd0
+      internalID: -1893327786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 86
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74742aee59b0f6e43bdb3b595e2bb84c
+      internalID: -2104348764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 87
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5648cffbae3eb408169c9e4af519a3
+      internalID: 1026329072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gennaro dietro umano che cammina-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 89
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a946d0896b32d94e83a582d48bd2c1b
+      internalID: -1974728619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: edaba9ddced1a4b40a73a6bb16eb9663
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Gennaro dietro umano che cammina-Sheet_0: -578564455
+      Gennaro dietro umano che cammina-Sheet_1: 2059736855
+      Gennaro dietro umano che cammina-Sheet_10: 340113164
+      Gennaro dietro umano che cammina-Sheet_11: 1702116972
+      Gennaro dietro umano che cammina-Sheet_12: 255709955
+      Gennaro dietro umano che cammina-Sheet_13: -237570257
+      Gennaro dietro umano che cammina-Sheet_14: -1354956084
+      Gennaro dietro umano che cammina-Sheet_15: 1930359658
+      Gennaro dietro umano che cammina-Sheet_16: 455625067
+      Gennaro dietro umano che cammina-Sheet_17: -1950873045
+      Gennaro dietro umano che cammina-Sheet_18: 1799129157
+      Gennaro dietro umano che cammina-Sheet_19: 1455398792
+      Gennaro dietro umano che cammina-Sheet_2: 420712539
+      Gennaro dietro umano che cammina-Sheet_20: 1715812976
+      Gennaro dietro umano che cammina-Sheet_21: -2121830918
+      Gennaro dietro umano che cammina-Sheet_22: -1339785511
+      Gennaro dietro umano che cammina-Sheet_23: -1893327786
+      Gennaro dietro umano che cammina-Sheet_24: -2104348764
+      Gennaro dietro umano che cammina-Sheet_25: 1026329072
+      Gennaro dietro umano che cammina-Sheet_26: -1974728619
+      Gennaro dietro umano che cammina-Sheet_3: -2100924538
+      Gennaro dietro umano che cammina-Sheet_4: 105485030
+      Gennaro dietro umano che cammina-Sheet_5: 1900953108
+      Gennaro dietro umano che cammina-Sheet_6: 1949462409
+      Gennaro dietro umano che cammina-Sheet_7: 885798882
+      Gennaro dietro umano che cammina-Sheet_8: 966864834
+      Gennaro dietro umano che cammina-Sheet_9: -1995494254
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
