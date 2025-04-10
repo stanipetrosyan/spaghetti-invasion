@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 2c8d1e5621976aaa18faef7b724e09ad
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 57
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e18f605155d005e8a70476e904b45ef
+      internalID: 243538386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 58
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba5812dff7b1513abfbe577429b1fc2
+      internalID: 851022849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 59
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbac2c35ed0e708fb5db52094472c3a
+      internalID: -1880721601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 60
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac939eaf752188a8498d2a6553e8276e
+      internalID: 1919948276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 61
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cd6e55916663f939b601fd2e5516da
+      internalID: 2124311812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 62
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08560ecd79ec22e89e483eb8b2d1591
+      internalID: -1668653609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 63
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f1b65e14569806689abbc1b3c78eb8
+      internalID: 1668166564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 64
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94562c63dbdaa4d1b84c87cdb9279b41
+      internalID: -1172007908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 65
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865b4713eb1db197a8e1d5360d59facb
+      internalID: -281839180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 66
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8a4e82b5a15df85ace7f40e38f634c
+      internalID: -1709489212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 67
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a2999c2a6f9bee49bb695505e42162
+      internalID: 1878655886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 68
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9ebd62f6706f70e945e57eb26ea835
+      internalID: -124743486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 69
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c117eaaf86bd9d168de4780d59ebcc0
+      internalID: -1908086613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 70
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08803e998c79ee6f86bc51c83e2e829
+      internalID: 1911585588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 71
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94b4e88e3c9ccda689a60980f9aa1a6
+      internalID: 1978348019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 72
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068a7f7ccc1f31e019721e2b41d4b0d0
+      internalID: -327310499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 73
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7055c778d259c6efbc3fad5379bb9a0
+      internalID: -985339655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 74
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e640875f51837bfa84191fdb7e7e980
+      internalID: 1551128199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 75
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6ac7d5a6da26a38a15acd2ccf9c56d
+      internalID: 392165729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 76
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a507fae681989814097d1be357d812c0
+      internalID: -1961975777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 77
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b010919197a85d414a2d864a9f9a224a
+      internalID: -1968866709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 80
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25f2e578af3cddc58d27cf25a42b1e9
+      internalID: -1636501273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 82
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1f23cf590bf30d2960086cb2c29f18
+      internalID: -1178741928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 84
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1015e2ae9cfe8b7cab3dcc10c9f3c194
+      internalID: -771977238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 86
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9c221dda2b4e1d8a8f0d6b1f1d89e1
+      internalID: -236075697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 87
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e4239d56ef7bd2380559c193d1a54c
+      internalID: 216623951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secondino dietro umano che cammina 2-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 89
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868a25f813b248d1a85772ba246008fb
+      internalID: -1979093343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fab21e864432045a4ab8059c4eeff2d3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Secondino dietro umano che cammina 2-Sheet_0: 243538386
+      Secondino dietro umano che cammina 2-Sheet_1: 851022849
+      Secondino dietro umano che cammina 2-Sheet_10: 1878655886
+      Secondino dietro umano che cammina 2-Sheet_11: -124743486
+      Secondino dietro umano che cammina 2-Sheet_12: -1908086613
+      Secondino dietro umano che cammina 2-Sheet_13: 1911585588
+      Secondino dietro umano che cammina 2-Sheet_14: 1978348019
+      Secondino dietro umano che cammina 2-Sheet_15: -327310499
+      Secondino dietro umano che cammina 2-Sheet_16: -985339655
+      Secondino dietro umano che cammina 2-Sheet_17: 1551128199
+      Secondino dietro umano che cammina 2-Sheet_18: 392165729
+      Secondino dietro umano che cammina 2-Sheet_19: -1961975777
+      Secondino dietro umano che cammina 2-Sheet_2: -1880721601
+      Secondino dietro umano che cammina 2-Sheet_20: -1968866709
+      Secondino dietro umano che cammina 2-Sheet_21: -1636501273
+      Secondino dietro umano che cammina 2-Sheet_22: -1178741928
+      Secondino dietro umano che cammina 2-Sheet_23: -771977238
+      Secondino dietro umano che cammina 2-Sheet_24: -236075697
+      Secondino dietro umano che cammina 2-Sheet_25: 216623951
+      Secondino dietro umano che cammina 2-Sheet_26: -1979093343
+      Secondino dietro umano che cammina 2-Sheet_3: 1919948276
+      Secondino dietro umano che cammina 2-Sheet_4: 2124311812
+      Secondino dietro umano che cammina 2-Sheet_5: -1668653609
+      Secondino dietro umano che cammina 2-Sheet_6: 1668166564
+      Secondino dietro umano che cammina 2-Sheet_7: -1172007908
+      Secondino dietro umano che cammina 2-Sheet_8: -281839180
+      Secondino dietro umano che cammina 2-Sheet_9: -1709489212
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
