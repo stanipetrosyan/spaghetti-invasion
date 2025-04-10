@@ -1,0 +1,862 @@
+fileFormatVersion: 2
+guid: 2c9913b89cb704e4988c98225d1bd29a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 13
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226f9bfedff60694fa96b9033d6b8195
+      internalID: 1883552759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 16
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c87d12c8e652745afdcce327477bfe
+      internalID: -1557871731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 19
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a810cc2271cdd4dab0cf9b3def584d
+      internalID: -2055390542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 23
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c97c3bc0747ee04585e45e973b4021f
+      internalID: 1779201390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 28
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf0519116c213f4ba43960f69d5c35b
+      internalID: 391215996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 31
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf8979f71b077c48861d1a82ba233e0
+      internalID: -1160235266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 35
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2830f33c0a2ac554c85358ac171686ce
+      internalID: 214949911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 41
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9cf529c4f82ee4daacc44eb895f770
+      internalID: 1462335317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 45
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fbf9afb8d605d4e9e52f17efac81e5
+      internalID: -1577546230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 49
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57dc4f5234e8934992caf86a5a713fc
+      internalID: -798734135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 54
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dfa3fcfd6b89746806e2efe0944d0e
+      internalID: 480998556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 59
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef683c92907472438fa48b90a9eef4e
+      internalID: 1433637219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 61
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd0dad8314fa5e46b9ba50fc729b60d
+      internalID: -1957982375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 63
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074119824f1637144a9689a9f5b20d57
+      internalID: -7751217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 60
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b37df9964a12d408e5bd4b65c69381
+      internalID: -1768616046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 60
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77e62bafd7b1684893d2cf49e0d15a6
+      internalID: 360935409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 55
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9635e3e61e351f6439002c49dbe594c6
+      internalID: -1847483914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 51
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd94ce56efb94e4e8fd96119ab101e0
+      internalID: 56576417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 48
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e029b278f81d5d54b8b454e87dc902b8
+      internalID: 454659777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 45
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef58561f1437e8d49a1e61166a70fd72
+      internalID: 794806924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 39
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd49fb9c6faee843abd61c007cfdd37
+      internalID: -1019142404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 34
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b432bbc1c778e42bcdbc7ba3ceddaa
+      internalID: 1276865595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 30
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1396ca30f85bdd8419e72a49bd64b55c
+      internalID: 976520900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 26
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccbb5034f19fb44890758478591a5d6
+      internalID: -350494162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 21
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f95f99dc119ea4994e88da56c40445
+      internalID: -1945659099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 16
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d385304ae03ae804e8c70b1782606ebf
+      internalID: 1184005321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45080083803b10429266f9c2efa8d62
+      internalID: 408616367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 6
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10084b7604d8ad44891fcca99c191ddf
+      internalID: -1190123788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 10
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192f986f9f767f745956a57e23fecb11
+      internalID: -1517024513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 12
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766b11eee68efc94cad66b45740eb401
+      internalID: -1973991906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 6
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2bddc516fea9547a0d18a9f876f32a
+      internalID: -899921740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 3
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5595b6eddd37b55479cb41fa55742fc7
+      internalID: -1527980710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 1
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e76f8e32dda2b4494b21266838cfab
+      internalID: 578555355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno Camminata frontatale-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 0
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83537c234790bfc4c87192830c464da4
+      internalID: -1058713168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8142c354e2c74e8418992d2a79ae83c3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Alieno Camminata frontatale-Sheet_0: 1883552759
+      Alieno Camminata frontatale-Sheet_1: -1557871731
+      Alieno Camminata frontatale-Sheet_10: 480998556
+      Alieno Camminata frontatale-Sheet_11: 1433637219
+      Alieno Camminata frontatale-Sheet_12: -1957982375
+      Alieno Camminata frontatale-Sheet_13: -7751217
+      Alieno Camminata frontatale-Sheet_14: -1768616046
+      Alieno Camminata frontatale-Sheet_15: 360935409
+      Alieno Camminata frontatale-Sheet_16: -1847483914
+      Alieno Camminata frontatale-Sheet_17: 56576417
+      Alieno Camminata frontatale-Sheet_18: 454659777
+      Alieno Camminata frontatale-Sheet_19: 794806924
+      Alieno Camminata frontatale-Sheet_2: -2055390542
+      Alieno Camminata frontatale-Sheet_20: -1019142404
+      Alieno Camminata frontatale-Sheet_21: 1276865595
+      Alieno Camminata frontatale-Sheet_22: 976520900
+      Alieno Camminata frontatale-Sheet_23: -350494162
+      Alieno Camminata frontatale-Sheet_24: -1945659099
+      Alieno Camminata frontatale-Sheet_25: 1184005321
+      Alieno Camminata frontatale-Sheet_26: 408616367
+      Alieno Camminata frontatale-Sheet_27: -1190123788
+      Alieno Camminata frontatale-Sheet_28: -1517024513
+      Alieno Camminata frontatale-Sheet_29: -1973991906
+      Alieno Camminata frontatale-Sheet_3: 1779201390
+      Alieno Camminata frontatale-Sheet_30: -899921740
+      Alieno Camminata frontatale-Sheet_31: -1527980710
+      Alieno Camminata frontatale-Sheet_32: 578555355
+      Alieno Camminata frontatale-Sheet_33: -1058713168
+      Alieno Camminata frontatale-Sheet_4: 391215996
+      Alieno Camminata frontatale-Sheet_5: -1160235266
+      Alieno Camminata frontatale-Sheet_6: 214949911
+      Alieno Camminata frontatale-Sheet_7: 1462335317
+      Alieno Camminata frontatale-Sheet_8: -1577546230
+      Alieno Camminata frontatale-Sheet_9: -798734135
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

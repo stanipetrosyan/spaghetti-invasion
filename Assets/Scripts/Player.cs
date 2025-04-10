@@ -13,8 +13,10 @@ public class Player : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
     private bool transformed = false;
     private AnxietyCounter anxietyCounter;
+    private Animator animator;
 
     private void Start() {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
         anxietyCounter = GetComponent<AnxietyCounter>();

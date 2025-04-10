@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: 1f9cec9503b01e649ba7984941f82495
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2998a3557b6d99744a2a4fd530d9bbcc
+      internalID: -1169038086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 3
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9ba33b368c13445ad947968703d30d
+      internalID: 947004846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 8
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1aff17d774179848b1eec9dd4d1f026
+      internalID: 1956338632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 11
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac48962ec3e6f142b2c462a81239463
+      internalID: -648330248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 8
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973f613220343fd41892ca784034acda
+      internalID: 1636775990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 3
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8e3031a22c0b14f8d608f6f5004cf9
+      internalID: 1969422646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 8
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb1342bed103f04d9255ab111dab154
+      internalID: -1320936753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 13
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c38b6d51a49aa43882610efdb6f01b
+      internalID: 50684998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 8
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16bb2b69e576eb46b0cc3d6888fd821
+      internalID: 1728624828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 3
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9289fa68fcb6674d9c4f91c62f411c8
+      internalID: -1827539559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 3
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5b5a3262635734b8c2301bab61c6d3
+      internalID: 1478521641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 3
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe65428ebec22634b9d30f6bd3e1ddc9
+      internalID: 414286634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 8
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de53e7ad34db74945a982c98c829a96c
+      internalID: 110884791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 11
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bdb4cb50f5eac4697ba7b29e8ad06e
+      internalID: 1637710929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 8
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80794560f6a188f41ae60508f8f5e936
+      internalID: -541947459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 3
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b237f14582c72c94b981d8d134531251
+      internalID: 2049064579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 8
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b45846ed05ca14ea72d997546e0696
+      internalID: 1377898117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 13
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc81790c9f21d943a7671df85fbcba6
+      internalID: -1685642137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 8
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d6f194ae17b4f4eb929ef25bd4374c
+      internalID: -1730256929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alieno laterale camminata-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2437
+        y: 3
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a63908889b7ef4a9ef1dfd0c4aa00f
+      internalID: 1283735991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9f52105f87111a741b5a576d85e44eda
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Alieno laterale camminata-Sheet_0: -1169038086
+      Alieno laterale camminata-Sheet_1: 947004846
+      Alieno laterale camminata-Sheet_10: 1478521641
+      Alieno laterale camminata-Sheet_11: 414286634
+      Alieno laterale camminata-Sheet_12: 110884791
+      Alieno laterale camminata-Sheet_13: 1637710929
+      Alieno laterale camminata-Sheet_14: -541947459
+      Alieno laterale camminata-Sheet_15: 2049064579
+      Alieno laterale camminata-Sheet_16: 1377898117
+      Alieno laterale camminata-Sheet_17: -1685642137
+      Alieno laterale camminata-Sheet_18: -1730256929
+      Alieno laterale camminata-Sheet_19: 1283735991
+      Alieno laterale camminata-Sheet_2: 1956338632
+      Alieno laterale camminata-Sheet_3: -648330248
+      Alieno laterale camminata-Sheet_4: 1636775990
+      Alieno laterale camminata-Sheet_5: 1969422646
+      Alieno laterale camminata-Sheet_6: -1320936753
+      Alieno laterale camminata-Sheet_7: 50684998
+      Alieno laterale camminata-Sheet_8: 1728624828
+      Alieno laterale camminata-Sheet_9: -1827539559
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
