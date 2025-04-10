@@ -90,7 +90,7 @@ namespace Enemies {
             else if (position.y - initialPosition.y >= 0 && position.y - initialPosition.y <= 0.1f) {
                 changeY = 0;
                 changeX = -1;
-                animator.SetInteger("Move", 4);
+                animator.SetInteger("Move", 3);
             }
 
             gameObject.transform.position += Vector3.down * (Time.deltaTime * changeY * speed);
