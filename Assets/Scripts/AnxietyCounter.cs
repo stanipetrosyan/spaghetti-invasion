@@ -22,7 +22,7 @@ public class AnxietyCounter : MonoBehaviour {
         Setup();
     }
 
-    private void Update() {
+    private void FixedUpdate() {
         if (anxiety <= 1) {
             GameManagers.Audio.StopHeartBeat();
             Setup();
