@@ -53,20 +53,20 @@ public class AnxietyCounter : MonoBehaviour {
         gameCamera.orthographicSize = Mathf.Lerp(minimum, maximum, time);
 
         if (Mathf.Approximately(maximum, 30)) {
-            time += heartBeat * 0.016f;// * Time.deltaTime;
+            time += heartBeat * Time.deltaTime;
         }
         else {
-            time += (heartBeat * 3) * 0.016f;// * 3 * Time.deltaTime;
+            time += (heartBeat * 3) * Time.deltaTime;
         }
 
 
         if (time > smoothTime) {
             if (hasAnxiety) {
                 if (maximum > minimum) {
-                    minimum -= 0.2f;
+                    minimum -= 0.1f;
                 }
                 else {
-                    maximum -= 0.2f;
+                    maximum -= 0.1f;
                 }
 
             }
@@ -85,7 +85,7 @@ public class AnxietyCounter : MonoBehaviour {
     }
 
     public void IncreaseAnxiety(float amount) {
-        if (anxiety >= 25) {
+        if (anxiety >= 20) {
             player.GameOver(Reason.Light);
             return;
         }
