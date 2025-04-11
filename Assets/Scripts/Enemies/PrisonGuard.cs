@@ -68,8 +68,9 @@ namespace Enemies {
         private void Patrol() {
             var position = gameObject.transform.position;
             // down
-            if (position.y - initialPosition.y >= 0 && position.y - initialPosition.y <= 0.1f &&
-                position.x - initialPosition.x >= 0 && position.x - initialPosition.x <= 0.1f) {
+            if (position.y - initialPosition.y >= 0 && position.y - initialPosition.y <= 0.5f &&
+                position.x - initialPosition.x >= 0 && position.x - initialPosition.x <= 0.5f) {
+                gameObject.transform.position = initialPosition;
                 changeY = 1;
                 changeX = 0;
                 animator.SetInteger("Move", 0);
@@ -81,13 +82,13 @@ namespace Enemies {
                 animator.SetInteger("Move", 1);
             }
             //left
-            else if (position.x - initialPosition.x >= moveLimit && initialPosition.y - position.y >= 0.1) {
+            else if (position.x - initialPosition.x >= moveLimit && initialPosition.y - position.y >= 0.5f) {
                 changeX = 0;
                 changeY = -1;
                 animator.SetInteger("Move", 2);
             }
             // up
-            else if (position.y - initialPosition.y >= 0 && position.y - initialPosition.y <= 0.1f) {
+            else if (position.y - initialPosition.y >= 0 && position.y - initialPosition.y <= 0.5f) {
                 changeY = 0;
                 changeX = -1;
                 animator.SetInteger("Move", 3);

@@ -24,6 +24,7 @@ namespace Workflows {
             else {
                 climaxTriggered = true;
                 player.MinimizeAnxiety();
+                GameManagers.Input.SetCanMove(false);
                 StartCoroutine(WaitCalmDialogue());
             }
         }
@@ -31,11 +32,9 @@ namespace Workflows {
         public void Trigger() {
             if(triggered) return;
             
-            
-            GameManagers.Input.SetCanMove(false);
             triggered = true;
             GameManagers.Audio.StopPrisonAudio();
-            
+            GameManagers.Input.SetCanMove(false);
             GameManagers.Dialogue.StartDialogue(climaxDialogue);
         }
 
@@ -44,7 +43,6 @@ namespace Workflows {
             GameManagers.Dialogue.StartDialogue(calmDialogue);
             yield return new WaitForSeconds(10f);
             GameManagers.Audio.PlayPrisonAudio();
-            GameManagers.Input.SetCanMove(true);
             gameObject.SetActive(false);
             
         }

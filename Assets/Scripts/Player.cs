@@ -15,6 +15,9 @@ public class Player : MonoBehaviour {
     private AnxietyCounter anxietyCounter;
     private Animator animator;
 
+    private float moveHorizontal;
+    private float moveVertical;
+
     private void Start() {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -37,6 +40,11 @@ public class Player : MonoBehaviour {
         if (GameManagers.Input.CanMove()) {
             Move();
             DetectCollision();
+        }
+        else {
+            moveHorizontal = 0;
+            moveVertical = 0;
+            rb.velocity = Vector2.zero;
         }
     }
 
@@ -87,8 +95,8 @@ public class Player : MonoBehaviour {
     private void Move() {
         transformed = false;
 
-        float moveHorizontal = Input.GetAxisRaw("Horizontal");
-        float moveVertical = Input.GetAxisRaw("Vertical");
+        moveHorizontal = Input.GetAxisRaw("Horizontal");
+        moveVertical = Input.GetAxisRaw("Vertical");
 
         if (moveHorizontal != 0) {
             direction = new Vector2(moveHorizontal, 0) * 2;
