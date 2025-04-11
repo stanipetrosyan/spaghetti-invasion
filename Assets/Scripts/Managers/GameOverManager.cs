@@ -38,16 +38,16 @@ namespace Managers{
 
         private static string GetReason(Reason reason) {
             return reason switch {
-                Reason.Light => "You became one of them",
-                Reason.Guard => "They caught you and ate you!",
+                Reason.Light => "Camouflage is not for the faint of heart… The longer you look like them, the more you become one of them.",
+                Reason.Guard => "Don’t let them see you without your disguise on!",
                 _ => "ERR"
             };
         }
 
         private Dialogue GetDialogue(Reason reason) {
             var line = reason switch {
-                Reason.Light => new DialogueLine(player, "DIALOGO MORTE PER LUCE"),
-                Reason.Guard => new DialogueLine(guard, "DIALOGO MORTE PER GUARDIA"),
+                Reason.Light => new DialogueLine(player, "Anxiety overwhelms you. You freeze in shock and will not move."),
+                Reason.Guard => new DialogueLine(guard, "You have been found! This time, they’ll make sure to dismiss you properly…"),
                 _ => new DialogueLine(player, "getDialog(reason)")
             };
 
