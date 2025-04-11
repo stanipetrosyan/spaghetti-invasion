@@ -492,6 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f4c3fd493c2e2418725dea2f38e554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: MainMenu
 --- !u!114 &608699738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,24 +508,11 @@ MonoBehaviour:
   dialogueList:
   - lines:
     - character: {fileID: 11400000, guid: deaa197c4fb5cad4a877c8bc8f1a07d7, type: 2}
-      line: 'Osteria Italiana is not your usual restaurant.
-
-        Opened in July
-        XXXX, Osteria Italiana was born as a simple fast-food barely at the outskirts:
-        a simple place really,  maybe a bit run-down. Business really took off when
-        Ferruccio Esposito, current owner, took over the Osteria'
-    - character: {fileID: 11400000, guid: deaa197c4fb5cad4a877c8bc8f1a07d7, type: 2}
-      line: "You work as a waiter at the Osteria: everyone here knows you as Gennaro,
-        the friendly new guy. Which is good, since Mother Ship recommended you mingled
-        with the humans as much as possible not to raise suspicions about your\u2026
-        Nature."
-    - character: {fileID: 11400000, guid: deaa197c4fb5cad4a877c8bc8f1a07d7, type: 2}
-      line: "Everything ran smoothly for quite some time\u2026 At least until you
-        were sent to the refrigerators to fetch something. It was there that you
-        disclosed the truth behind the Osteria\u2019s recent success. A truth way
-        too terrible for you. Your camouflage stopped working, the shock giving you
-        away,  and before you knew it, you were captured and locked away\u2026"
-  timeBetweenDialogues: 1
+      line: "The italians\u2026 They have no mercy. Ferruccio Esposito is a ruthless
+        man who made a business out of eating your people. And customers LIKE it.
+        You hesitate just a moment, but you cannot allow this to continue.\r\nYou
+        call the Mother Ship. The invasion begins now."
+  timeBetweenDialogues: 3
 --- !u!1 &1573474382
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,7 +748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5418104052331753273, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -405
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5418104052331753273, guid: 31b96dee63545b217a8b446630fd7ee8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -831,7 +819,7 @@ Animator:
   m_GameObject: {fileID: 1984706029}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2ff6df0c79272c8719b7f44ea9d4f4f2, type: 2}
+  m_Controller: {fileID: 9100000, guid: cfae701a865999042bcbebbe89eb9dc9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -883,12 +871,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1798370137, guid: 73b2ca5a64ee3d44f8bdfd690c891ea0, type: 3}
+  m_Sprite: {fileID: -557453881, guid: d6dd928e01e3e5c418527a48d8a44bdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.9199998, y: 1.0799999}
+  m_Size: {x: 1.92, y: 1.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -904,8 +892,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 108, y: 108, z: 108}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1080, y: 1080, z: 1080}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 353670111}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

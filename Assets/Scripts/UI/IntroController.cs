@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class IntroController : MonoBehaviour {
+    [SerializeField] private string sceneToLoad;
     private DialogueSequence sequence;
 
     void Start() {
@@ -15,7 +16,7 @@ public class IntroController : MonoBehaviour {
     void Update()
     {
         if (sequence.IsFinished() && !CutsceneManagers.Dialogue.IsActiveDialogue()) {
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }
