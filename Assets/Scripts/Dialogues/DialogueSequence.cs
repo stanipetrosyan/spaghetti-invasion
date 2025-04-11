@@ -19,7 +19,12 @@ namespace Dialogues {
             foreach (var dialogue in dialogueList) {
                 yield return new WaitForSeconds(timeBetweenDialogues);
 
-                CutsceneManagers.Dialogue.StartDialogue(dialogue);
+                if (GameManagers.Dialogue) {
+                    GameManagers.Dialogue.StartDialogue(dialogue);
+                }
+                if (CutsceneManagers.Dialogue) {
+                    CutsceneManagers.Dialogue.StartDialogue(dialogue);
+                }
             }
             
             finished = true;
