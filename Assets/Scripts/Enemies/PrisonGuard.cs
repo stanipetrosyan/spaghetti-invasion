@@ -60,9 +60,7 @@ namespace Enemies {
                         }
 
                         if (!player.IsTransformed()) {
-                            Debug.Log(!player.IsTransformed());
-
-                            //player.GameOver(Reason.Guard);   
+                            player.GameOver(Reason.Guard);   
                         }
                     }
                 }
