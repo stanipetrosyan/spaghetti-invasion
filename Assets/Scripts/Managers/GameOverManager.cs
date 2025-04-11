@@ -27,6 +27,8 @@ namespace Managers{
         public void GameOver(Reason reason) {
             if (gameOver) return;
 
+            GameManagers.Audio.StopAll();
+            GameManagers.Audio.PlayDeath();
             GameManagers.Input.SetCanMove(false);
             PlayerPrefs.SetString("GameOverReason", GetReason(reason));
             Dialogue dialogue = GetDialogue(reason);
