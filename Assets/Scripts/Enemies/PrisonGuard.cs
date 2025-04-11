@@ -17,13 +17,14 @@ namespace Enemies {
         private int speed = 6;
         [SerializeField] private LayerMask interactableLayer;
         private Animator animator;
+        private Player player;
 
         private void Start() {
             light2D = GetComponent<Light2D>();
             radius = light2D.pointLightOuterRadius;
             initialPosition = gameObject.transform.position;
             animator = GetComponent<Animator>();
-            
+
             if (patrol) {
                 canMove = true;
             }
@@ -43,23 +44,25 @@ namespace Enemies {
             var hits = new List<RaycastHit2D>();
             Physics2D.CircleCast(transform.position, radius, Vector2.zero, contactFilter, hits,
                 radius);
-            
+
+  
+
             foreach (var hit in hits) {
                 if (patrol) {
                     canMove = true;
                 }
-                
+
                 if (hit.collider is not null) {
-                    var player = hit.collider.gameObject.GetComponent<Player>();
+                    player = hit.collider.gameObject.GetComponent<Player>();
                     if (player) {
                         if (patrol) {
                             canMove = false;
                         }
 
                         if (!player.IsTransformed()) {
-                             player.GameOver(Reason.Guard);
+                            Debug.Log(!player.IsTransformed());
 
-                            //Debug.Log(!player.IsTransformed());
+                            //player.GameOver(Reason.Guard);   
                         }
                     }
                 }

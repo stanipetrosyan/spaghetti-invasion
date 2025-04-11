@@ -495,23 +495,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 946916381}
     m_Modifications:
-    - target: {fileID: 3344978757187388635, guid: dfa83e833853982be84c3cbbacca2172, type: 3}
-      propertyPath: dialogue.lines.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3344978757187388635, guid: dfa83e833853982be84c3cbbacca2172, type: 3}
-      propertyPath: dialogue.lines.Array.data[0].line
-      value: Oh? What are you doing here? Bah, not my problem, at least not before
-        my shift.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3344978757187388635, guid: dfa83e833853982be84c3cbbacca2172, type: 3}
-      propertyPath: dialogue.lines.Array.data[0].character
-      value: 
-      objectReference: {fileID: 11400000, guid: 595c08b8d5ffd0d7da6f9c9343436479, type: 2}
-    - target: {fileID: 4502306052641786828, guid: dfa83e833853982be84c3cbbacca2172, type: 3}
-      propertyPath: interactableLayer.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
     - target: {fileID: 8170786411998857781, guid: dfa83e833853982be84c3cbbacca2172, type: 3}
       propertyPath: m_Name
       value: PrisonGuardSud
@@ -1357,19 +1340,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 946916381}
     m_Modifications:
-    - target: {fileID: 3344978757187388635, guid: 671f47982fbd508fda5208e8b9aa73cc, type: 3}
-      propertyPath: dialogue.lines.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3344978757187388635, guid: 671f47982fbd508fda5208e8b9aa73cc, type: 3}
-      propertyPath: dialogue.lines.Array.data[0].line
-      value: "Ehi, you still haven\u2019t found your key? Wait till Ferruccio finds
-        out\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3344978757187388635, guid: 671f47982fbd508fda5208e8b9aa73cc, type: 3}
-      propertyPath: dialogue.lines.Array.data[0].character
-      value: 
-      objectReference: {fileID: 11400000, guid: 7ea42a14b454f44aa95265492ab10a00, type: 2}
     - target: {fileID: 8170786411998857781, guid: 671f47982fbd508fda5208e8b9aa73cc, type: 3}
       propertyPath: m_Name
       value: PrisonGuard2
@@ -4798,15 +4768,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1763701154}
     m_Modifications:
-    - target: {fileID: 3043794628207485203, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: dialogue.lines.Array.data[0].line
-      value: "Oh? A waiter, here? You must be lost\u2026Upstairs, to the kitchens!
-        They must be waiting for you at the Osteria Italiana"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3043794628207485203, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
-      propertyPath: dialogue.lines.Array.data[0].character
-      value: 
-      objectReference: {fileID: 11400000, guid: b86b8aa8845c66fe89437e9b60735017, type: 2}
     - target: {fileID: 3798286448786727457, guid: 504e2db89e7ad5ed596d70df3c61bd10, type: 3}
       propertyPath: m_LocalPosition.x
       value: -266
@@ -6503,11 +6464,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 237.2
+      value: -57.5
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -55.2
+      value: 25.8
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7114,10 +7075,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1763701154}
     m_Modifications:
-    - target: {fileID: 3043794628207485203, guid: 640ab8827b482eaf69f177f48f812c33, type: 3}
-      propertyPath: dialogue.lines.Array.data[0].character
-      value: 
-      objectReference: {fileID: 11400000, guid: 051a4f00e73113505b7e42b00cd4e695, type: 2}
     - target: {fileID: 3798286448786727457, guid: 640ab8827b482eaf69f177f48f812c33, type: 3}
       propertyPath: m_LocalPosition.x
       value: -260.40002

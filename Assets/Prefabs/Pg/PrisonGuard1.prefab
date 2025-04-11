@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 535.5, y: 683.6, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 1}
+  m_LocalScale: {x: 12, y: 12, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -218,6 +218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrol: 1
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &3344978757187388635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,4 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    lines: []
+    lines:
+    - character: {fileID: 11400000, guid: 595c08b8d5ffd0d7da6f9c9343436479, type: 2}
+      line: Oh? What are you doing here? Bah, not my problem, at least not before
+        my shift.

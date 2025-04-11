@@ -31,6 +31,10 @@ public class Player : MonoBehaviour {
     public void Transform() {
         transformed = true;
     }
+    
+    public void NotTransform() {
+        transformed = false;
+    }
 
     public void DeactivateLight() {
         light2D.enabled = false;
@@ -117,7 +121,7 @@ public class Player : MonoBehaviour {
         
         
         Animate(animationDirection, movement != Vector2.zero, !transformed);
-        transformed = false;
+        //transformed = false;
     }
 
     public void GameOver(Reason reason) {
