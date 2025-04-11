@@ -13,7 +13,9 @@ namespace Managers{
         }
 
         public void StartDialogue(Dialogue dialogue) {
-            GameManagers.Interact.Deactivate();
+            if (GameManagers.Interact) {
+                GameManagers.Interact.Deactivate();
+            }
             dialogueBox.Show();
             dialogueBox.StartDialogue(dialogue);
         }
