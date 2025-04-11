@@ -6114,7 +6114,7 @@ PrefabInstance:
     - target: {fileID: 2465503990692748794, guid: 2c90ea8caa736cc4f8a4155c0e32e287, type: 3}
       propertyPath: spriteToRender
       value: 
-      objectReference: {fileID: 21300000, guid: 30be092b0b1a686478ad4807d69b5553, type: 3}
+      objectReference: {fileID: 21300000, guid: 6959e7049fad81346bc56e2d9b1525d5, type: 3}
     - target: {fileID: 2650242003550748482, guid: 2c90ea8caa736cc4f8a4155c0e32e287, type: 3}
       propertyPath: m_Name
       value: BoardExperiment
