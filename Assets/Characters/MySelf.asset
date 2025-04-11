@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MySelf
   m_EditorClassIdentifier: 
   displayName: My Self
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 357da940f0359443f8c2a5ef07a5abe5, type: 3}

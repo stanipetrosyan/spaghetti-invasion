@@ -208,7 +208,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 10
-  m_PointLightOuterRadius: 20
+  m_PointLightOuterRadius: 15
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 7364120242161758114}
   - component: {fileID: 519245897439510510}
   - component: {fileID: 1604479492033775843}
+  - component: {fileID: 5423238501351079626}
   m_Layer: 7
   m_Name: Gennaro
   m_TagString: Untagged
@@ -250,8 +251,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 177.6, y: 42, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 15, y: 15, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4171730907987417975}
   - {fileID: 2746148682989667869}
@@ -297,8 +298,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_SortingOrder: 4
+  m_Sprite: {fileID: -969702323, guid: 0c074f9abda24cd4d904de6ce228f4dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -322,10 +323,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 50
-  radius: 4
+  radius: 3
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 328
+    m_Bits: 264
 --- !u!61 &7364120242161758114
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -358,18 +359,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.000010669231, y: 0.00020390749}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.28, y: 0.58}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.28633028, y: 0.584365}
   m_EdgeRadius: 0
 --- !u!50 &519245897439510510
 Rigidbody2D:
@@ -411,6 +412,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anxiety: 0
-  smoothTime: 1
-  light: {fileID: 1268896198082519001}
-  camera: {fileID: 6691333669591980799}
+  hasAnxiety: 0
+  smoothTime: 1.8
+  heartBeat: 2.8
+  gameCamera: {fileID: 6691333669591980799}
+  player: {fileID: 7482482148912066165}
+  redScreen: {fileID: 0}
+--- !u!95 &5423238501351079626
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8022386010468467106}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47e8438b4d7836a44888c74f0919d609, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 351c96e2fefd4bffabd51a9b68eb4493, type: 3}
-  m_Name: FrateFarina
+  m_Name: PrisonGuardFemale3
   m_EditorClassIdentifier: 
-  displayName: FrateFarina
-  icon: {fileID: 21300000, guid: a7c576c958564e055a896781b81c0e1f, type: 3}
+  displayName: Prison Guard
+  icon: {fileID: 21300000, guid: 59cf60980b2e76dc8bfaac507ed4f55f, type: 3}
