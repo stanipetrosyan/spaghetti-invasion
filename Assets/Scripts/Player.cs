@@ -28,6 +28,11 @@ public class Player : MonoBehaviour {
 
     public void Transform() {
         transformed = true;
+        //animator.SetBool("IsAlien", false);
+    }
+
+    public void TransformIntoAlien() {
+        transformed = false;
     }
 
     public bool IsTransformed() {
@@ -93,24 +98,64 @@ public class Player : MonoBehaviour {
     }
 
     private void Move() {
-        transformed = false;
 
         moveHorizontal = Input.GetAxisRaw("Horizontal");
         moveVertical = Input.GetAxisRaw("Vertical");
 
-        if (moveHorizontal != 0) {
-            direction = new Vector2(moveHorizontal, 0) * 2;
-        }
-        else if (moveVertical != 0) {
-            direction = new Vector2(0, moveVertical) * 2;
-        }
-
         Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed;
-
         rb.velocity = movement;
+        int animationDirection = 0;
+        if (moveVertical < 0)
+            animationDirection = 0; 
+        else if (moveVertical > 0)
+            animationDirection = 1; 
+        else if (moveHorizontal < 0)
+            animationDirection = 2; 
+        else if (moveHorizontal > 0)
+            animationDirection = 3; 
+        
+        
+        UnityEngine.Debug.Log("Direction: " + animationDirection + " Movement: " + movement != Vector2.zero + " Alien: " + !transformed);
+        
+        Animate(animationDirection, movement != Vector2.zero, !transformed);
+        transformed = false;
     }
 
     public void GameOver(Reason reason) {
         GameManagers.GameOver.GameOver(reason);
+    }
+    
+
+    public void Animate(int animationDirection, bool isMoving, bool isAlien) {
+        string state = "Gennaro";
+        if (isAlien) {
+            state += "Alien";
+        }
+        else {
+            state += "Human";
+        }
+        switch (animationDirection) {
+            case 0:
+                state += "Down";
+                break;
+            case 1:
+                state += "Up";
+                break;
+            case 2:
+                state += "Left";
+                break;
+            case 3:
+                state += "Right";
+                break;
+        }
+        if (isMoving) {
+            state += "Moving";
+        }
+        else {
+            state += "Idle";
+        }
+        
+        UnityEngine.Debug.Log(state);
+        animator.Play(state);
     }
 }
