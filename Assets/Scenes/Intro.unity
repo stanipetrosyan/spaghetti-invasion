@@ -507,6 +507,14 @@ MonoBehaviour:
   dialogueList:
   - lines:
     - character: {fileID: 11400000, guid: deaa197c4fb5cad4a877c8bc8f1a07d7, type: 2}
+      line: 'WARNING
+
+        THE FOLLOWING PROGRAM MAY CONTAIN BRIGHT, FLASHING
+        LIGHTS AND/OR IMAGERY THAT MAY CAUSE DISCOMFORT AND/OR SEIZURES FOR THOSE
+        WITH PHOTOSENSISTIVE EPILEPSY.
+
+        VIEWER DISCRETION IS ADVISED.'
+    - character: {fileID: 11400000, guid: deaa197c4fb5cad4a877c8bc8f1a07d7, type: 2}
       line: 'Osteria Italiana is not your usual restaurant.
 
         Opened in July
