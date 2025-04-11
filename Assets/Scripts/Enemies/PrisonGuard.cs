@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Domain;
 using Managers;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
@@ -56,7 +57,7 @@ namespace Enemies {
                         }
 
                         if (!player.IsTransformed()) {
-                            // player.GameOver(Reason.Guard);
+                             player.GameOver(Reason.Guard);
 
                             //Debug.Log(!player.IsTransformed());
                         }

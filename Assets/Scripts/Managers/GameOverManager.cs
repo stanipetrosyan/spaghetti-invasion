@@ -5,8 +5,8 @@ using Port;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Managers {
-    public class GameOverManager : MonoBehaviour, IManager {
+namespace Managers{
+    public class GameOverManager : MonoBehaviour, IManager{
         [SerializeField] private DialogueCharacter player;
         [SerializeField] private DialogueCharacter guard;
 
@@ -25,8 +25,10 @@ namespace Managers {
         }
 
         public void GameOver(Reason reason) {
-            PlayerPrefs.SetString("GameOverReason", GetReason(reason));
+            if (gameOver) return;
 
+            GameManagers.Input.SetCanMove(false);
+            PlayerPrefs.SetString("GameOverReason", GetReason(reason));
             Dialogue dialogue = GetDialogue(reason);
             GameManagers.Dialogue.StartDialogue(dialogue);
             gameOver = true;
