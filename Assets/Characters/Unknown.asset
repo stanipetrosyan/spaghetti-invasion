@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Unknown
   m_EditorClassIdentifier: 
   displayName: ???
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 40b3c60044ed82750817ee9933435cec, type: 3}
