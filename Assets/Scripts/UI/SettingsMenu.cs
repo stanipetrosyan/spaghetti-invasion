@@ -22,6 +22,7 @@ namespace UI {
             resolutionDropdown.AddOptions(options);
         
             volumeSlider.value = PlayerPrefs.GetFloat("Volume", 1);
+            SetVolume(PlayerPrefs.GetFloat("Volume", 1));
             fullscreenToggle.isOn = PlayerPrefs.GetInt("Fullscreen", 0) == 1;
             qualityDropdown.value = PlayerPrefs.GetInt("Quality", 0);
             
@@ -33,7 +34,8 @@ namespace UI {
             SetResolution(resolutionIndex);
         }
         public void SetVolume(float volume) {
-            audioMixer.SetFloat("Volume", volume);
+            var volumeLog = Mathf.Log10(volume)*20;
+            audioMixer.SetFloat("Volume", volumeLog);
         
             PlayerPrefs.SetFloat("Volume", volume);
         }
