@@ -2317,10 +2317,10 @@ MonoBehaviour:
     - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
       line: Still, you pray for salvation. The words form in your mind.
     - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
-      line: "Oh you Great One of the Dish, \nMay I never be overcook\u2019d, May
-        I not enter skirmish, May I never be downlook.\nOh, you Great One grant me
-        strength\nIf I lack, ah! Do please lend\nIf around you all revolves \nLet
-        my heart be of Resolve.\n"
+      line: "Oh you Great One of the Dish \\ May I never be overcook\u2019d\nMay
+        I not enter skirmish \\ May I never be downlook.\nOh, you Great One grant
+        me strength \\ If I lack, ah! Do please lend\nIf around you all revolves
+        \\ Let my heart be of Resolve."
     - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}
       line: "Nothing happens\u2026 But what is that glimmer to the side of the Altar?"
     - character: {fileID: 11400000, guid: 5515cd229ddd24a599c62e6310202e4c, type: 2}

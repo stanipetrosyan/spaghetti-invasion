@@ -16,7 +16,7 @@ namespace Dialogues {
 
         public bool IsDialogueActive { get; private set; }
 
-        private const float TypingSpeed = 0.05f;
+        private const float TypingSpeed = 0.020f;
 
         private void Start() {
             gameObject.SetActive(false);
