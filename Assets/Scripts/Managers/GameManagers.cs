@@ -40,12 +40,6 @@ namespace Managers{
                 HUD,
                 GameOver
             };
-
-            Debug.Log(PlayerPrefs.GetFloat("Volume", 0));
-            Debug.Log(PlayerPrefs.GetInt("Quality", 0));
-            Debug.Log(PlayerPrefs.GetInt("Fullscreen", 0));
-            Debug.Log(PlayerPrefs.GetInt("Resolution", 0));
-            
             
             StartCoroutine(StartupManagers());
             globalLight.gameObject.SetActive(false);

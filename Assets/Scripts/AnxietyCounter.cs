@@ -35,6 +35,7 @@ public class AnxietyCounter : MonoBehaviour {
     }
 
     private void Setup() {
+        gameCamera.orthographicSize = 30;
         maximum = gameCamera.orthographicSize;
         minimum = 28;
         

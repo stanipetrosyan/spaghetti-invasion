@@ -505,7 +505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8578621613658691930, guid: dfa83e833853982be84c3cbbacca2172, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.4
+      value: -14.9
       objectReference: {fileID: 0}
     - target: {fileID: 8578621613658691930, guid: dfa83e833853982be84c3cbbacca2172, type: 3}
       propertyPath: m_LocalPosition.z
@@ -959,7 +959,8 @@ PrefabInstance:
       value: 0.0001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2749572172994558733, guid: 53a8caddcedf49c629c849e9dc80cf35, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7870104947666325665, guid: 53a8caddcedf49c629c849e9dc80cf35, type: 3}
       insertIndex: 1
@@ -5534,11 +5535,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2286379214504262928, guid: 4f5e570fbb4b4b35294ec9930d73c27e, type: 3}
       propertyPath: m_PointLightInnerAngle
-      value: 182.11
+      value: 357.64
       objectReference: {fileID: 0}
     - target: {fileID: 2286379214504262928, guid: 4f5e570fbb4b4b35294ec9930d73c27e, type: 3}
       propertyPath: m_PointLightOuterAngle
-      value: 184.47
+      value: 360
       objectReference: {fileID: 0}
     - target: {fileID: 4218529130788401495, guid: 4f5e570fbb4b4b35294ec9930d73c27e, type: 3}
       propertyPath: m_Name
@@ -6464,11 +6465,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -57.5
+      value: 273.9
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.8
+      value: -53.9
       objectReference: {fileID: 0}
     - target: {fileID: 5982620180977043928, guid: d9af36f32f968d391a5da3c648cbc00c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6742,6 +6743,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 679958415}
+    - target: {fileID: 2388230330874850504, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
+      propertyPath: climaxDialogue.lines.Array.data[1].line
+      value: "The Osteria Italiana... The Italians\u2026"
+      objectReference: {fileID: 0}
     - target: {fileID: 3414435383903959940, guid: 3db775678f23e1533b2ac364981be4bf, type: 3}
       propertyPath: m_Name
       value: Graveyard

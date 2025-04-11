@@ -9,7 +9,6 @@ namespace UI {
     public class SettingsMenu : MonoBehaviour{
         [SerializeField] private AudioMixer audioMixer;
         private Resolution[] resolutions;
-        [SerializeField] private TMP_Dropdown resolutionDropdown;
         [SerializeField] private Slider volumeSlider;
         [SerializeField] private Toggle fullscreenToggle;
         [SerializeField] private TMP_Dropdown qualityDropdown;
@@ -17,9 +16,7 @@ namespace UI {
     
         private void Start() {
             resolutions = Screen.resolutions;
-            resolutionDropdown.ClearOptions();
             var options = resolutions.Select(item => $"{item.width}x{item.height}").ToList();
-            resolutionDropdown.AddOptions(options);
         
             volumeSlider.value = PlayerPrefs.GetFloat("Volume", 1);
             SetVolume(PlayerPrefs.GetFloat("Volume", 1));
@@ -30,7 +27,6 @@ namespace UI {
             var resolutionIndex = Array.IndexOf(resolutions, defaultResolution);
 
             Screen.SetResolution(defaultResolution.width, defaultResolution.height, Screen.fullScreen); 
-            resolutionDropdown.value = resolutionIndex;
             SetResolution(resolutionIndex);
         }
         public void SetVolume(float volume) {
