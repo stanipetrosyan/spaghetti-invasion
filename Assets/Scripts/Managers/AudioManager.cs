@@ -6,6 +6,7 @@ namespace Managers {
         [SerializeField] private AudioSource prisonAudio;
         [SerializeField] private AudioSource heartBeatAudio;
         [SerializeField] private AudioSource deathAudio;
+        [SerializeField] private AudioSource controlRoomAudio;
         
         public ManagerStatus Status { get; set; }
         public void Startup() {
@@ -15,12 +16,26 @@ namespace Managers {
         private void Start() {
             PlayPrisonAudio();
         }
+
+        public void StopAll() {
+            prisonAudio.Stop();
+            heartBeatAudio.Stop();
+            deathAudio.Stop();
+            controlRoomAudio.Stop();
+        }
         
         public void PlayPrisonAudio() {
             if(prisonAudio.isPlaying) return;
             
             prisonAudio.Play();
         }
+        
+        public void PlayControlRoomAudio() {
+            if(controlRoomAudio.isPlaying) return;
+            
+            controlRoomAudio.Play();
+        }
+
 
         public void StopPrisonAudio() {
             prisonAudio.Stop();

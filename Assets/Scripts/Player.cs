@@ -2,6 +2,7 @@ using Domain;
 using Managers;
 using Port;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Player : MonoBehaviour {
     [SerializeField] private float moveSpeed = 5f;
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour {
     private bool transformed = false;
     private AnxietyCounter anxietyCounter;
     private Animator animator;
+    [SerializeField] private Light2D light2D;
 
     private float moveHorizontal;
     private float moveVertical;
@@ -28,11 +30,10 @@ public class Player : MonoBehaviour {
 
     public void Transform() {
         transformed = true;
-        //animator.SetBool("IsAlien", false);
     }
 
-    public void TransformIntoAlien() {
-        transformed = false;
+    public void DeactivateLight() {
+        light2D.enabled = false;
     }
 
     public bool IsTransformed() {
@@ -69,7 +70,7 @@ public class Player : MonoBehaviour {
                         }
                     }
                     break;
-                case "Graveyard": 
+                case "Workflow": 
                     hit.collider.gameObject.GetComponent<Workflow>().Trigger();
                     break;
                 default:
@@ -115,8 +116,6 @@ public class Player : MonoBehaviour {
             animationDirection = 3; 
         
         
-        UnityEngine.Debug.Log("Direction: " + animationDirection + " Movement: " + movement != Vector2.zero + " Alien: " + !transformed);
-        
         Animate(animationDirection, movement != Vector2.zero, !transformed);
         transformed = false;
     }
@@ -124,9 +123,9 @@ public class Player : MonoBehaviour {
     public void GameOver(Reason reason) {
         GameManagers.GameOver.GameOver(reason);
     }
-    
 
-    public void Animate(int animationDirection, bool isMoving, bool isAlien) {
+
+    private void Animate(int animationDirection, bool isMoving, bool isAlien) {
         string state = "Gennaro";
         if (isAlien) {
             state += "Alien";
@@ -155,7 +154,6 @@ public class Player : MonoBehaviour {
             state += "Idle";
         }
         
-        UnityEngine.Debug.Log(state);
         animator.Play(state);
     }
 }
